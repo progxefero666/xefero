@@ -27,8 +27,8 @@
 	<link rel="stylesheet" type="text/css"
 		href="https://cdnjs.cloudflare.com/ajax/libs/jquery-mobile/1.4.5/jquery.mobile.min.css"	 />
 
-	<link rel="stylesheet" type="text/css" href="./css/fonts.css" />
-	<link rel="stylesheet" type="text/css" href="./css/app_containers.css" />
+	<link rel="stylesheet" type="text/css" href="css/fonts.css" />
+	<link rel="stylesheet" type="text/css" href="css/app_containers.css" />
 
 	<!-- libraries: webgl -->
 	<script type="text/javascript" src="./app_lib/webgl/XfTimer.js"></script>
@@ -98,12 +98,14 @@
 
 <body>
 
-	<div data-role="page" id="index" data-theme="b">
+	<!-- layout -->
+	<div data-role="page" id="page_xefero" data-theme="b">
 
+		<!-- header -->
 		<div data-role="header">
 			<div data-role="navbar" class="ui-state-persist">
 				<ul>
-					<li><a href="#index" class="ui-btn-active">Inicio</a></li>
+					<li><a href="#page_index" class="ui-btn-active">Inicio</a></li>
 					<li><a href="./startwars.html" data-ajax="false">Star Wars</a></li>
 					<li><a href="./cuartel.html" data-ajax="false">Cuartel</a></li>
 					<li><a href="./doom.html" data-ajax="false">Doom</a></li>
@@ -112,60 +114,20 @@
 			</div>
 		</div>
 
+		<!-- main -->
 		<div data-role="main" class="ui-content">
 
-			<!-- LAYOUT COMMON -->
+			<!-- left-->
 			<div class="layout_common">
-
-				<!-- webgl application menu -->
-				<div id="panel_menu" class="container_home">
-					<table class="menu_fivecolumns">
-						<tbody>
-							<tr>
-								<td id="opcion_1">
-									<a href="#" class="ui-btn-inline">
-										<img class="squaremenu" alt="def" src="./resources/pictures/option_tie.jpg">
-									</a>
-								</td>
-								<td id="opcion_2">
-									<a href="#" class="ui-btn-inline">
-										<img class="squaremenu" alt="def" src="./resources/pictures/option_tie.jpg">
-									</a>
-								</td>
-								<td id="opcion_3">
-									<a href="#" class="ui-btn-inline">
-										<img class="squaremenu" alt="def" src="./resources/pictures/option_tie.jpg">
-									</a>
-								</td>
-								<td id="opcion_4">
-									<img class="squaremenu" alt="def" src="./resources/pictures/option_tie.jpg">
-								</td>
-								<td>
-									<a id="opcion_5" href="page_presupuesto.html" data-ajax="false">
-										<img class="squaremenu" alt="def" src="./resources/pictures/option_tie.jpg">
-									</a>
-								</td>
-
-							</tr>
-						</tbody>
-					</table>
-				</div>
-				<!-- container_default .................................................................... -->
-
-				<!-- monitor -->
 				<div class="container_editor">
-
 					<div class="container_editor_left">
 						<canvas id="trCanvas" width="280px" height="280px" style="visibility:hidden"></canvas>
 					</div>
-
 					<div id="containerMonitor" class="container_editor_right">
 						<div class="stlmonitor" id="gl_canvas"></div>
 					</div>
 				</div>
-
 			</div>
-			<!-- end layout common -->
 
 			<!-- right -->
 			<div class="bar_secondary">
@@ -176,9 +138,7 @@
 			</div>
 
 		</div>
-		<!-- end ui-content -->
-
-
+		
 	</div>
 	<!-- End Page -->
 

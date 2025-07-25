@@ -3,28 +3,25 @@
 <html lang="es">
 
 <head>
-	<title>Iluminación Led</title>
+	<title>Xefero3D</title>
 
-	<!-- meta -->	
-    <meta charset="UTF-8">
-    <meta name="description" content="Lámparas e iluminación LED decorativa">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
- 	<meta name="robots" content="index"/>
- 	<meta http-equiv="cache-control" content="no-cache"/>
- 
-	<link rel="canonical" href="https://xefero.com/" />	        		
-	
-	<!-- 	undefined
-	<link rel="shortcut icon" href="/favicon-16x16.png" />	
-	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-	
-	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<!-- meta -->
+	<meta charset="UTF-8">
+	<meta name="description" content="Lámparas e iluminación LED decorativa">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="robots" content="index" />
+	<meta http-equiv="cache-control" content="no-cache" />
+
+	<link rel="canonical" href="https://xefero.com/" />
 	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-	<link rel="manifest" href="site.webmanifest"> -->
-	
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.js"></script>
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mobile/1.4.5/jquery.mobile.min.js"></script>
-	<link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/jquery-mobile/1.4.5/jquery.mobile.min.css" type="text/css" />
+	<link rel="manifest" href="site.webmanifest">
+
+	<!-- jquery -->
+	<script type="text/javascript" 
+		src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.js"></script>
+
+	<script type="text/javascript" 
+		src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mobile/1.4.5/jquery.mobile.min.js"></script>
 	
     
 	<link rel="stylesheet" type="text/css" href="css/app_fonts.css"/>
@@ -109,66 +106,31 @@
 	
 
 	<!-- Page: Index  class="ui-btn" .............................................................................. -->
-	<div data-role="page" id="page_xefero" data-theme="b">	
+	<div data-role="page" id="#cuartel" data-theme="b">	
 	
+
 		<div data-role="header">
 			<div data-role="navbar" class="ui-state-persist">
-				<ul>					 										
-		      		<li><a href="#page_index" class="ui-btn-active">Inicio</a></li>
-		      		<li><a href="./app/digital/page_digital.html" data-ajax="false" >Digital</a></li>		      		
+				<ul>
+					<li><a href="./index.html" data-ajax="false">Inicio</a></li>
+					<li><a href="./startwars.html" data-ajax="false">Star Wars</a></li>
+					<li><a href="#cuartel" class="ui-btn-active">Cuartel</a></li>
+					<li><a href="./doom.html" data-ajax="false">Doom</a></li>
+					<li><a href="./race.html" data-ajax="false">Formula One</a></li>
 				</ul>
 			</div>
-		</div>	
+		</div>
 
 		<div data-role="main" class="ui-content">
 		
 			<!-- LAYOUT COMMON -->			
 			<div class="layout_common" >
-				<!-- container_default .................................................................... -->
+			
+				<!-- webgl application menu -->
 				<div id="panel_menu" class="container_home"  >								
-					<table class="menu_fivecolumns">
-						<tbody>
-							<tr>
-								<td id="opcion_1">								
-									<a href="#" 									   
-									   class="ui-btn-inline"  >
-										<img class="squaremenu" alt="def" 
-											src="./app/resources/editor/option_model_base.jpg" >
-									</a>									
-								</td>								
-								<td id="opcion_2">
-									<a href="#" 									   
-									   class="ui-btn-inline"  >
-										<img class="squaremenu" alt="def" 
-											src="./app/resources/editor/option_model_inferior.jpg" >
-									</a>	
-								</td>
-								<td id="opcion_3">
-									<a href="#" 									   
-									   class="ui-btn-inline"  >
-										<img class="squaremenu" alt="def" 
-											src="./app/resources/editor/option_model_superior.jpg" >
-									</a>	
-								</td>									
-								<td id="opcion_4">
-									<img class="squaremenu" alt="def" 
-										src="./app/resources/editor/option_makephoto.jpg" >
-								</td>
-								<td>								
-									<a id="opcion_5" href="page_presupuesto.html" 										
-										data-ajax="false" >									 
-										<img class="squaremenu" alt="def" 
-											src="./app/resources/editor/option_showreport.jpg" >
-									</a>								
-								</td>
-								
-							</tr>								
-						</tbody>	
-					</table>									
 				</div>
-				<!-- container_default .................................................................... -->
-											
 
+											
 		    	<!-- ....................................................................................... -->
 				<div class="container_editor"  id="containerMonitor" >		
 					<div class="stlmonitor" id="gl_canvas"></div>																 					
@@ -180,7 +142,7 @@
 			<!-- end layout common -->
 			
 			<!-- LAYOUT MOBILE -->
-			<div class="layout_mobile" >
+			<div class="bar_secondary" >
 			
 				<div class="cont_mobile_header">			
 					<img class="content_header_img" src="./app/resources/banners/ban_headerlogo_330x97.jpg" alt="default">

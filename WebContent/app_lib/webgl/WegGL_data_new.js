@@ -3,6 +3,7 @@
 /**
  * class WebGL_dto((parent,dataPath,id)
  */
+ // @ts-ignore
  class WebGL_dto {        
     
 	//constructor	
@@ -17,6 +18,7 @@
 		
 		let modelFileName 	= this.id.concat('.json');
 		let path 			= 	this.dataPath.concat('/').concat(modelFileName);
+		// @ts-ignore
 		let modelObj 		=  WebGL_util.readJSonObject(path);	
 		this.initPosition	= initPosition;
 	
@@ -64,11 +66,13 @@
 			if(modelObj.objects[0].alphaFileName!=null){
 				alphaFileName = modelObj.objects[0].alphaFileName;
 				console.log('apply alpha map');
+				// @ts-ignore
 				WebGL_util.loadWglTextureAlphaObject(THREE,scene,fbxLoader,txtLoader,
 					this,this.dataPath,fbxFileName,position,scale,opacity,mapFileName,alphaFileName)
 				
 			}		
 			else {
+				// @ts-ignore
 				WebGL_util.loadWglComplexTextureObject(THREE,scene,fbxLoader,txtLoader,
 					this,this.dataPath,fbxFileName,position,elem.color,scale,opacity,mapFileName,aoFileName,emissiveFileName,roughnessFileName,bumpFileName);													
 			}
@@ -76,6 +80,7 @@
 		else {
 			// @ts-ignore
 			let texture = WebGL_threeUtil.getColorTexture(THREE,'trCanvas',elem.color)
+			// @ts-ignore
 			WebGL_util.loadWglPhysicalColorObject(THREE,scene,fbxLoader,this,this.dataPath,fbxFileName,elem.position,scale,elem.color,elem.opacity,texture);
 		}			
 				
@@ -97,6 +102,7 @@
 /*
  * class WebGL_groupdtos
 */
+ // @ts-ignore
  class WebGL_groupdtos {        
     
 	//constructor	
@@ -122,6 +128,7 @@
 		let modelFileName = this.id.concat('.json');
 		let path = 	this.dataPath.concat(modelFileName);
 		
+		// @ts-ignore
 		let modelObj =  WebGL_util.readJSonObject(path);
 		this.boundRadius = modelObj.boundsRadius;
 		
@@ -171,12 +178,14 @@
 										
 				//let textureLoader = new THREE.TextureLoader();
 				if(materialType == 'normal'){
+					// @ts-ignore
 					WebGL_util.loadWglComplexTextureObject(THREE,scene,fbxLoader,txtLoader,
 						this,this.dataPath,fbxFileName,
 						position,color,scale,opacity,
 						mapFileName,aoFileName,emissiveFileName,roughnessFileName,bumpFileName,normalFileName);								
 				}
 				if(materialType == 'physical'){
+					// @ts-ignore
 					WebGL_util.loadWglPhysicalTextureObject(THREE,scene,fbxLoader,txtLoader,
 					this,this.dataPath,fbxFileName,position,color,scale,opacity,mapFileName,aoFileName,emissiveFileName,roughnessFileName,bumpFileName);				
 				}
@@ -184,6 +193,7 @@
 			else {
 				// @ts-ignore
 				let texture = WebGL_threeUtil.getColorTexture(THREE,'trCanvas',color)
+				// @ts-ignore
 				WebGL_util.loadWglPhysicalColorObject(THREE,scene,fbxLoader,this,this.dataPath,fbxFileName,position,scale,color,opacity,texture);
 			}			
 		}//end for
@@ -218,6 +228,7 @@
 /**
  * class WebGL_listdtos
  */
+ // @ts-ignore
  class WebGL_listdtos {        
     
 	//constructor	
@@ -234,6 +245,7 @@
 	
 		let modelFileName = this.id.concat('.json');
 		let path = 	this.dataPath.concat('/').concat(modelFileName);
+		// @ts-ignore
 		let modelObj =  WebGL_util.readJSonObject(path);	
 		
 		this.position	= modelObj.position;
@@ -279,10 +291,12 @@
 				}			
 								
 				if(materialType == 'normal'){
+					// @ts-ignore
 					WebGL_util.loadWglComplexTextureObject(THREE,scene,fbxLoader,txtLoader,
 						this,this.dataPath,fbxFileName,position,color,scale,opacity,mapFileName,aoFileName,emissiveFileName,roughnessFileName,bumpFileName);								
 				}
 				if(materialType == 'physical'){
+					// @ts-ignore
 					WebGL_util.loadWglPhysicalTextureObject(THREE,scene,fbxLoader,txtLoader,
 					this,this.dataPath,fbxFileName,position,color,scale,opacity,mapFileName,aoFileName,emissiveFileName,roughnessFileName,bumpFileName);				
 				}				
@@ -290,6 +304,7 @@
 			else {
 				// @ts-ignore
 				let texture = WebGL_threeUtil.getColorTexture(THREE,'trCanvas',color)
+				// @ts-ignore
 				WebGL_util.loadWglPhysicalColorObject(THREE,scene,fbxLoader,this,this.dataPath,fbxFileName,position,scale,color,opacity,texture);
 			}			
 		}//end for
@@ -318,6 +333,7 @@
 /**
  * class WebGL_morphdto
  */
+ // @ts-ignore
  class WebGL_morphdto {        
     
 	//constructor	
@@ -344,6 +360,7 @@
 		let modelFileName = this.id.concat('.json');
 		let path = 	this.dataPath.concat(modelFileName);
 		
+		// @ts-ignore
 		let modelObj =  WebGL_util.readJSonObject(path);
 		this.boundRadius = modelObj.boundsRadius;
 		
@@ -392,10 +409,12 @@
 				}					
 				if(materialType == 'normal'){
 					//debugger;
+					// @ts-ignore
 					WebGL_util.loadWglComplexTextureObject(THREE,scene,fbxLoader,txtLoader,
 						this,this.dataPath,fbxFileName,position,color,scale,opacity,mapFileName,aoFileName,emissiveFileName,roughnessFileName,bumpFileName);								
 				}
 				if(materialType == 'physical'){
+					// @ts-ignore
 					WebGL_util.loadWglPhysicalTextureObject(THREE,scene,fbxLoader,txtLoader,
 					this,this.dataPath,fbxFileName,position,color,scale,opacity,mapFileName,aoFileName,emissiveFileName,roughnessFileName,bumpFileName);				
 				}
@@ -403,6 +422,7 @@
 			else {
 				// @ts-ignore
 				let texture = WebGL_threeUtil.getColorTexture(THREE,'trCanvas',color)
+				// @ts-ignore
 				WebGL_util.loadWglPhysicalColorObject(THREE,scene,fbxLoader,this,this.dataPath,fbxFileName,position,scale,color,opacity,texture);
 			}			
 		}//end for
@@ -472,6 +492,7 @@
 /**
  * class WebGL_terrain((parent,dataPath,id)
  */
+ // @ts-ignore
  class WebGL_terrain {        
     
 	//constructor	
@@ -486,6 +507,7 @@
 	loadWglObject(THREE,scene,fbxLoader,txtLoader,initPosition) {
 		let modelFileName 	= this.id.concat('.json');
 		let path 			= 	this.dataPath.concat('/').concat(modelFileName);
+		// @ts-ignore
 		let modelObj 		=  WebGL_util.readJSonObject(path);	
 		this.initPosition	= initPosition;
 	
@@ -497,6 +519,7 @@
 
 		let mapFileName = modelObj.objects[0].textures;
 		
+		// @ts-ignore
 		WebGL_util.loadWglTerrainByTexture(THREE,scene,fbxLoader,txtLoader,
 			this,this.dataPath,fbxFileName,position,elem.color,1,mapFileName,this.imageData);
 				
