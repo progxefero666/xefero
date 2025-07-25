@@ -22,6 +22,10 @@
 
 	<script type="text/javascript" 
 		src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mobile/1.4.5/jquery.mobile.min.js"></script>
+
+	<!-- style -->
+	<link rel="stylesheet" type="text/css"
+		href="https://cdnjs.cloudflare.com/ajax/libs/jquery-mobile/1.4.5/jquery.mobile.min.css"	 />
 	
 	<link rel="stylesheet" type="text/css" href="style/layouts.css"/>
 	<link rel="stylesheet" type="text/css" href="style/fonts.css"/>
@@ -63,7 +67,7 @@
     <script type="text/javascript" src="./app_lib/webgl/WebGL_util_new.js"></script>    
     <script type="text/javascript" src="./app_lib/webgl/WegGL_data_new.js"></script> 
 
-	<!--  application -->
+	<!-- libraries: Application Doom -->
  	<script type="text/javascript" src="appHouse/HouseManager.js"></script> 	
  	<script type="text/javascript" src="appDoom/DoomManager.js"></script> 
  	<script type="text/javascript" src="appDoom/DoomPlayerConfig.js"></script>  
@@ -75,6 +79,7 @@
  	 	
 	<script type="text/javascript" src="appDoom/DoomPage.js"></script> 		  	
   	  	
+	<!-- load three.js ............................................................ -->
    	<script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
 	<script type="importmap">
   	{
@@ -84,7 +89,9 @@
     	}
   	}
 	</script>
+	<!-- .......................................................................... -->
 
+	<!-- Page WebGL Application -->
   	<script type="module">
   		import * as THREE from 'three';
 		import { FBXLoader } from 'three/addons/loaders/FBXLoader.js';
@@ -93,33 +100,36 @@
 			initialized = true;     
 	  	});
 	</script>
-	<!-- page code: end  -->
  	
 </head>
 
-<body>	
-	
-	<!-- page ui-content -->								
-	<div class="layout_crono" id="pageContainer">
-		<div class="body_center_image" id="containerGamePad"  >	
-			<img src="resources/pictures/gamepad.png" alt="gamepad" />
-		</div>				
-													
-		<div class="wglMonitor" id="containerMonitor" style="display: none;" >	
-			<div  id="gl_canvas"></div>		
-		</div>																								
-	</div>
-	<!-- end ui-content -->
+<body>
 
-	<div id="wglCursorContainer" style="display: none;">
-		<img src = "resources/pictures/playercursor.png" width="52" height="52" />
-	</div>	
-		
-	<!-- wgl Game Map ........................................................
-	<div id="wglGameMapContainer" >
-			<div id="map_canvas" ></div>
-	</div>
-	 -->		
-        
+	<div data-role="page" id="index" data-theme="b">
+	
+		<!-- webgl content -->								
+		<div class="layout_crono" id="pageContainer">
+			<div class="body_center_image" id="containerGamePad"  >	
+				<img src="resources/pictures/gamepad.png" alt="gamepad" />
+			</div>				
+														
+			<div class="wglMonitor" id="containerMonitor" style="display: none;" >	
+				<div  id="gl_canvas"></div>		
+			</div>																								
+		</div>
+		<div id="wglCursorContainer" style="display: none;">
+			<img src = "resources/pictures/playercursor.png" width="52" height="52" />
+		</div>			
+
+		<!--  wgl Game Map
+		<div id="wglGameMapContainer" >
+				<div id="map_canvas" ></div>
+		</div>
+		-->		
+			
+		</div>
+		<!-- End Page -->
+
 </body>
+
 </html>

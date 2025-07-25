@@ -22,9 +22,12 @@
 
 	<script type="text/javascript" 
 		src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mobile/1.4.5/jquery.mobile.min.js"></script>
-	
+
+	<!-- style -->
+	<link rel="stylesheet" type="text/css"
+		href="https://cdnjs.cloudflare.com/ajax/libs/jquery-mobile/1.4.5/jquery.mobile.min.css"	 />
     
-	<link rel="stylesheet" type="text/css" href="css/app_fonts.css"/>
+	<link rel="stylesheet" type="text/css" href="css/fonts.css"/>
     <link rel="stylesheet" type="text/css" href="css/app_containers.css"/>
 
     <!-- .................................................................................. -->
@@ -68,14 +71,13 @@
 	<script type="text/javascript" src="./app_lib/doom/GameTerrain.js"></script>
     <script type="text/javascript" src="./app_lib/game/GameFlyScene.js"></script>
     
+	<!-- libraries: Application Cuartel -->	
     <script type="text/javascript" src="./app/WebGLAppCuartel.js"></script>
     <script type="text/javascript" src="./app/WebGLAppPruebas.js"></script>
-   
-    
-  	<script type="text/javascript" src="./app/page_cuartel.js"></script>
-  		
+  	<script type="text/javascript" src="./app/page_cuartel.js"></script>  		
     <script type="text/javascript" src="./app/WegGLAppUniverse.js"></script>  
       		
+	<!-- load three.js ............................................................ -->	
    	<script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>    	
 	<script type="importmap">
   	{
@@ -84,9 +86,10 @@
       		"three/addons/": "./three/jsm/"
     	}
   	}
-	</script>
+	</script>	
+	<!-- .......................................................................... -->
 	
-
+	<!-- Page WebGL Application -->
   	<script type="module">
 
   		import * as THREE from 'three';
