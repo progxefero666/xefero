@@ -1,0 +1,21 @@
+{
+	"id":"ironman",
+	"objects":[
+		{
+			"id":"walls2.fbx",
+			"parent_id":null,
+			"position":[-36.4238,2.0,11.7141],
+			"color":[1.0,0.941176,0.913725,1.0],
+			"opacity":1.0,
+			"textures":null
+		},
+		{
+			"id":"walls1.fbx",
+			"parent_id":null,
+			"position":[11.8638,2.0,-6.2031],
+			"color":[1.0,0.941176,0.913725,1.0],
+			"opacity":1.0,
+			"textures":null
+		}
+	]
+}

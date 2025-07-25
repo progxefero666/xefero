@@ -1,0 +1,13 @@
+{
+	"id":"terrain",
+	"objects":[
+		{
+			"id":"terrain.fbx",
+			"parent_id":null,
+			"position":[0.0,0.0,0.0],
+			"color":[0.501961,0.501961,0.501961,1.0],
+			"opacity":1.0,
+			"textures":"terrain.png"
+		}
+	]
+}

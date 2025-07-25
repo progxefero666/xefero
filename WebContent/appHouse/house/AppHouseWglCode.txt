@@ -1,0 +1,40 @@
+						
+	/*
+	this.mousePointer = new THREE.Vector2();
+	this.mousePointer.x = 0;
+	this.mousePointer.y = 0;
+	this.raycaster = new THREE.Raycaster();
+	function animate() {
+		....
+		prevTime = time;			
+			
+		if(thisAppWglHouse.checkInters)	{
+			console.log('checkInters');
+			
+			thisAppWglHouse.raycaster.setFromCamera( thisAppWglHouse.mousePointer, thisAppWglHouse.camera );
+								
+			let intersects = thisAppWglHouse.raycaster.intersectObjects( thisAppWglHouse.scene.children );
+			console.log(intersects.length);
+			if(intersects.length>0){
+				alert('intersect');
+			}
+			//for ( let i = 0; i < intersects.length; i ++ ) {
+			//	intersects[ i ].object.material.color.set( 0xff0000 );
+			//}	
+			thisAppWglHouse.checkInters = false;
+		}		
+	}		
+
+		if(event.code == 'Enter'){
+			thisAppHouseWgl.controls.lock();
+			thisAppHouseWgl.app.init();
+			return;
+		}
+		
+		if(event.code == 'Escape'){
+			console.log('Escape');
+			thisAppHouseWgl.controls.unlock();
+			thisAppHouseWgl.app.reset();
+			return;
+		}
+		*/	

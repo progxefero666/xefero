@@ -63,8 +63,8 @@ class  WebGLAppUniverse {
 	
 		//terrain
 		//.......................................................................................
-		//this.terrain = new WebGL_dto(this,'data/game/universoA/','terrain');
-		//this.terrain.loadWglObject(THREE,this.scene,this.fbxLoader,this.txtLoader,null);	
+		this.terrain = new WebGL_dto(this,'data/game/universoA/','terrain');
+		this.terrain.loadWglObject(THREE,this.scene,this.fbxLoader,this.txtLoader,null);	
 			
 		//.......................................................................................
 		//load player ship

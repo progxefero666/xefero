@@ -1,0 +1,190 @@
+@charset "UTF-8";
+
+/* table.def ..................................................................................*/
+table.bar {
+	background-color: #323131;
+	width:100%;
+	height: auto;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;	  
+  	width: 100%;
+  	text-align: left;
+	border:none;	 
+	border-collapse: collapse 	
+}
+
+table.bar tbody tr td{
+  	border: 1px solid #252525;
+	width:25%;	
+	height:auto;
+	padding: 0.4em 0 0.4em 0.4em;		
+	cursor: pointer;
+	text-align: center;
+}
+
+
+/* table.def ..................................................................................*/
+table.def {
+	width:100%;
+	height: auto;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;	  
+  	width: 100%;
+  	text-align: left;
+	border:none;	 
+	border-collapse: collapse 	
+}
+
+table.def tbody tr td{
+  	border: 1px solid #252525;
+	width:auto;	
+	height:auto;
+	padding: 0.4em 0 0.4em 0.4em;		
+	cursor: pointer;
+}
+table.def tbody tr td.label{
+	text-align: right;
+}
+
+/* table twocolums ..................................................................................*/
+table.twocolums {
+	width:100%;
+	height: auto;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;	  
+  	width: 100%;
+  	text-align: left;
+	border:none;	 
+	border-collapse: collapse 	
+}
+
+table.twocolums tbody tr td{
+  	border: 1px solid #252525;
+	height:auto;
+	padding: 0.4em 0 0.4em 0.4em;		
+	cursor: pointer;
+}
+table.twocolums tbody tr td.label{
+	text-align: right;
+	width: 35%;
+}
+table.twocolums tbody tr td.input{
+	text-align: left;
+	width: 65%;
+}
+
+
+/* table twocolums ..................................................................................*/
+table.threecolums {
+	width:100%;
+	height: auto;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;	  
+  	width: 100%;
+  	text-align: left;
+	border:none;	 
+	border-collapse: collapse 	
+}
+
+table.threecolums tbody tr td{
+  	border: 1px solid #252525;
+	height:auto;
+	padding: 0.4em 0 0.4em 0.4em;		
+}
+table.threecolums tbody tr td.textcenter{
+	text-align: center;
+}
+/*
+table.threecolums tbody tr td.one{
+	text-align: right;
+	width: 55%;
+}
+table.threecolums tbody tr td.two{
+	text-align: left;
+	width: 35%;
+}
+table.threecolums tbody tr td.three{
+	text-align: left;
+	width: 10%;
+}
+*/
+table.fourcolumns {
+	width:100%;
+	height: auto;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;	
+	border: 1px solid #1C6EA4;  
+  	width: 100%;
+  	border-collapse: collapse;;
+}	
+
+table.fourcolumns tbody {
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}	
+	
+table.fourcolumns tbody tr td{
+  	border: 1px solid #252525;
+	padding: 3px 2px;	
+	width:25%;	
+	height:auto;
+	padding: 0.5em;		
+	text-align: center;	
+	cursor: pointer;
+}
+
+
+table.playermark {
+	width:100%;
+	height: auto;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;	  
+  	width: 100%;
+	border:none;	 
+	border-collapse: collapse 	
+}	
+
+table.playermark tbody {
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}	
+	
+table.playermark tbody tr td{
+  	border: 1px solid #252525;
+	padding: 3px 2px;	
+	width:25%;	
+	height:auto;
+	padding: 0.5em;		
+	cursor: pointer;
+	text-align: center;
+}
+
+/* table.def ..................................................................................*/
+table.form {
+	width:100%;
+	height: auto;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;	  
+  	width: 100%;
+  	text-align: left;
+	border:none;	 
+	border-collapse: collapse 	
+}
+
+table.form tbody tr td{
+  	border: 1px solid #252525;
+	width:auto;	
+	height:auto;
+			
+	cursor: pointer;
+}
+table.form tbody tr td.label{
+	text-align: right;
+	width: 30%;
+	padding: 5px 0 5px 10px;
+}
+table.form tbody tr td.input{
+	text-align: left;
+	width: 70%;
+	padding: 5px 10px 5px 10px;
+}

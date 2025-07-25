@@ -1,0 +1,13 @@
+{
+	"id":"ironman",
+	"objects":[
+		{
+			"id":"ironman.fbx",
+			"parent_id":null,
+			"position":[0,0,0],
+			"color":[0.7,0.7,0.7,1.0],
+			"opacity":1.0,
+			"textures":"ironman.jpg"
+		}
+	]
+}

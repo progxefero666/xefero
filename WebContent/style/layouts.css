@@ -1,0 +1,191 @@
+@charset "UTF-8";
+
+
+
+/* bodys .............................................................................*/
+body {
+    display: block;
+    background-color: black; 
+}
+
+/* layout_index .............................................................................*/
+.layout_home {
+	width: 80%;
+	height: auto;
+	padding: 20px 0 0 0;
+	margin: 0 auto 0 auto;
+	min-height: 610px;
+	background-color: transparent;
+}
+
+.layout_home_top {
+	float: left;
+	width: 100%;
+	margin-bottom: 20px;
+	height: auto;
+	background-color: transparent;
+}
+
+.layout_home_left {
+	float: left;
+	width: 28%;
+	height: auto;
+	background-color: transparent;
+}
+
+.layout_home_right {
+	float: left;
+	width: 70%;
+	height: 610px;
+	margin-left: 2%;
+	background-color:transparent;
+}
+
+
+/* layout_result .............................................................................*/
+.layout_result {
+	width: 70%;
+	height: auto;
+	padding: 20px 0 0 0;
+	margin: 0 auto 0 auto;
+	min-height: 610px;
+	background-color: transparent;
+}
+
+.div_commands{	
+	background-color: transparent;
+	width:100%;
+	height: auto;
+	padding: 0 0 0 0;	  
+  	width: 100%;
+  	text-align: center;
+	box-sizing: border-box;	
+	border: none;
+}
+
+
+/* layout crono .............................................................................*/
+.layout_crono{
+	background-color: #000000;
+	float:left;
+	width: 80%;
+	height: auto;	
+	padding: 12px 10% 0 10%;	
+	text-align: center;
+}
+.body_center_image {
+	text-align: center;
+	width:60%;	
+	height: auto;
+	margin: 20px auto 0 auto;
+	padding: 0 0 0 0;
+	box-sizing: border-box;	
+	border-style:solid;
+	border-width:2px;
+	border-color:#a39d9d;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;	
+	text-align: center;
+}
+.body_center_image img {
+	width:100%;	
+	height: auto;
+}
+
+
+/* layout_select car ..........................................................................*/
+
+
+.layout_select {
+	background-color: transparent;
+	width: 80%;
+	height: auto;
+	margin: 1% auto 0 auto;
+	padding: 1% 1% 1% 1%;
+	display: block;
+	
+}
+
+.layout_select_left {
+	background-color: transparent;
+	float:left;
+	width:26%;
+	height: auto;			
+	margin: 0 2% 0 0;
+	padding: 0 0 0 0;
+}
+
+.layout_select_right {
+	background-color: transparent;
+	float:left;
+	width: 72%;
+	padding: 0 0 0 0;
+	margin: 0 0 10px 0;
+	height: auto;
+	display: block;
+}
+
+.layout_select_bottom {
+	background-color: transparent;
+	text-align: center;
+	width: 100%;
+	height: auto;
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;	
+	display: inline-block;
+}
+
+/* layout_index .............................................................................
+.layout_index {
+	width: 70%;
+	height: auto;
+	display: flex;
+	margin: 0 auto 0 auto;
+	min-height: 610px;
+	background-color: transparent;
+}
+
+.layout_index_left {
+	float: left;
+	width: 28%;
+	height: 610px;
+	background-color: transparent;
+}
+
+.layout_index_right {
+	float: left;
+	width: 72%;
+	height: 610px;
+	background-color:transparent;
+}
+
+.layout_index_left_top {
+	width: 100%;
+	height: 160px;
+	background-color:transparent;
+	background-position: center;
+	background-image: url("images/homeleftheader.png");
+	background-repeat: no-repeat;	
+}
+
+.layout_index_left_main {
+	width: 100%;
+	height: 450px;
+	background-color:transparent;
+}
+
+.layout_index_right_top {
+	width: 100%;
+	height: 160px;	
+	background-color:transparent;
+	background-position: center;
+	background-image: url("images/homerightheader.png");
+	background-repeat: no-repeat
+}
+.layout_index_right_main {
+	width: 100%;
+	height: 450px;
+	background-color:transparent;
+}
+*/

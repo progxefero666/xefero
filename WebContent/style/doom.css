@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+#wglCursorContainer {	
+	z-index: 1002;	    
+    position: absolute;
+    top: 0px;
+    left: 600px;
+    width:52px;
+    height: 52px;    
+    text-align: center;
+}

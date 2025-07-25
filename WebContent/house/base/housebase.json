@@ -1,0 +1,37 @@
+{
+	"id":"housebase",
+	"objects":[
+		{
+			"id":"housefloor.fbx",
+			"parent_id":null,
+			"position":[-9.35422,5e-05,0.0],
+			"color":[0.5,0.5,0.5,1.0],
+			"opacity":1.0,
+			"textures":"floor.jpg"
+		},
+		{
+			"id":"garagefloor.fbx",
+			"parent_id":null,
+			"position":[18.0947,5e-05,0.0],
+			"color":[1.0,1.0,1.0,1.0],
+			"opacity":1.0,
+			"textures":"garagefloor.jpg"
+		},
+		{
+			"id":"houseroof.fbx",
+			"parent_id":null,
+			"position":[-1.49536,4.15,0.0],
+			"color":[0.99,0.95,0.95,1.0],
+			"opacity":1.0,
+			"textures":null
+		},
+		{
+			"id":"housewalls.fbx",
+			"parent_id":null,
+			"position":[-1.5,2.0,0.0],
+			"color":[0.99,0.95,0.95,1.0],
+			"opacity":1.0,
+			"textures":null
+		}
+	]
+}

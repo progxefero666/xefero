@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+
+ul.def {	
+	list-style: none;
+	margin: 0;
+	padding: 0 0 0 0;
+}
+ul.def li{
+	background-color: transparent;
+	width: auto;
+	height: 2.0em;
+	padding: 0.25em 0 0.25em 1.0em;
+	margin-bottom: 0;
+	cursor: pointer;
+}
+
+ul.buttons{	
+	list-style: none;
+	margin: 0;
+	padding: 0 0 0 0;	
+}
+ul.buttons li{
+	background-color: transparent;
+	width: 100%;
+	height: auto;
+	margin-bottom: 14px;
+	cursor: pointer;
+}
+ul.buttons li.selected{
+	background-color: orangered;
+}

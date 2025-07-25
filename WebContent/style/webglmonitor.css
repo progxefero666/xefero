@@ -1,0 +1,447 @@
+@charset "UTF-8";
+
+/* fonts ................................................................. */
+p.webgl {	
+	color: #ffffff;
+	font-family: 'BankGothic Md BT';
+	margin: 0 0 0 0;	
+	text-shadow: 1px 1px 1px #000000;
+   	font-size: 21px; 
+   	line-height: 21px;   
+}
+
+p.webglsmall {	
+	color: #ffffff;
+	font-family: 'BankGothic Md BT';
+	margin: 0 0 0 0;	
+	text-shadow: 1px 1px 1px #000000;
+   	font-size: 17px; 
+   	line-height: 17px;   
+}
+
+p.webglbig {	
+	color: #ffffff;
+	margin: 0 0 0 0;
+	padding: 0;		
+	font-family: 'BankGothic Md BT';
+	line-height: 40px;
+	font-size: 40px; 
+	font-style: normal;	
+   	font-weight: normal; 
+   	text-shadow: 1px 1px 1px #000000;
+}
+
+p.webglverybig {	
+	color: #ffffff;
+	margin: 0 0 0 0;
+	padding: 0;		
+	font-family: 'BankGothic Md BT';
+	line-height: 52px;
+	font-size: 52px; 
+	font-style: normal;	
+   	font-weight: normal; 
+   	text-shadow: 2px 2px 2px #000000;
+}
+
+p.webglbigblack{
+	color:#000000;
+	margin: 0 0 0 0;
+	padding: 0;		
+	font-family: 'BankGothic Md BT';
+	line-height: 45px;
+	font-size: 45px; 
+	font-style: normal;	
+   	font-weight: normal;   	 	   	
+}
+
+p.webglverybigblack{
+	color:#000000;
+	margin: 0 0 0 0;
+	padding: 0;		
+	font-family: 'BankGothic Md BT';
+	line-height: 52px;
+	font-size: 52px; 
+	font-style: normal;	
+   	font-weight: normal;   	 	   	
+}
+
+
+/* buttons ................................................................. */
+button.webgl {
+	cursor: pointer;			
+	background-color: #252525;
+	display: inline-flex;
+	padding: 4px;
+	box-sizing: border-box;		 
+	border-style:solid;
+	border-width:2px;
+	border-color:#a39d9d;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+button.webgl div.icon {
+	float: left;
+	margin: 0 0 0 0.5em;
+}
+
+
+button.webgl div.texto {
+	float: left;
+	padding: 12px 0 0 0;
+	margin: 0 0.5em 0 0.5em;
+	font-family:  sans-serif,Century Gothic, CenturyGothic, AppleGothic;	
+	color:#ffffff;
+	font-style: normal; 
+	font-size: 1.4em; 
+	line-height: 1.4em; 
+}  
+
+.stlmonitor {		
+	width:100%;
+	margin: 0 auto;
+	padding: 0 0 0 0;				
+}
+
+.containerHeader {
+	width:100%;
+	text-align: center;
+	padding: 4px 0 4px 0;
+}
+/* main webgl canvas ................................................................. */
+.wglMonitor {
+	text-align: center;
+	float:left;
+	width:99%;	
+	height: auto;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	box-sizing: border-box;	
+	border-style:solid;
+	border-width:2px;
+	border-color:#a39d9d;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;	
+}
+
+/* Game info bar wglContainer ................................................*/
+#wglMetersContainer {	
+	background: transparent;		
+    left: 600px;
+    position: absolute;
+    top: 500px;
+    width:20%;
+    z-index: 1001;
+    height: auto;    
+    padding:10px;
+    text-align: right;
+}
+#wglKiloMetersContainer {	
+	background: transparent;		
+    left: 500px;
+    position: absolute;
+    top: 500px;
+    width:14%;
+    z-index: 1001;
+    height: auto;    
+    padding:10px;
+    text-align: right;
+}
+
+#velocitybar{
+	height:26px;
+	width: 0px;
+	background-color: rgb(255,255,255);
+}
+
+#wglMetersContainer table {
+	float: right;
+	width: auto;
+	height:auto;
+}
+
+#wglMetersContainer tbody tr td{ 
+	padding:0 0 0 0;
+	margin: 0 0 0 0;
+}
+
+#wglMetersContainer tbody tr td.rvmeter{ 
+	text-align: center;
+}
+
+#containerMeter {
+    width:100px;  
+    height: 100px;
+    margin: 0 auto 0 auto;
+    opacity: 0.8;
+	background-color:transparent;
+	background-position: center;
+	background-image: url("images/meter/rvmeter_1.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+#containerMeterArrow {
+    width:100px;  
+    height: 100px;    
+	background-color:transparent;
+	background-position: center;
+	background-image: url("images/meter/rvmeterarrow.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	transform: rotate(0deg);
+}
+
+
+
+/* Game info bar wglContainer ................................................*/
+#wglInfoBarContainer {		
+    left: 600px;
+    position: absolute;
+    top: 0px;
+    width:18%;
+    z-index: 1001;
+    height: auto;    
+    text-align: center;
+    /*border-top: solid 2px #a39d9d;
+	border-bottom: solid 2px #a39d9d;*/
+}
+
+#wglGameCronoContainer {		
+    left: 600px;
+    position: absolute;
+    top: 0px;
+    width:10%;
+    z-index: 1001;
+    height: auto;    
+    text-align: center;
+}
+
+#wglGameLapContainer {		
+    left: 600px;
+    position: absolute;
+    top: 0px;
+    width:10%;
+    z-index: 1001;
+    height: auto;    
+    text-align: center;
+}
+
+/* Game player bar wglContainer ................................................*/
+#wglGameBarContainer {
+	text-align: center;		
+	background-color: transparent;
+    left: 600px;
+    position: absolute;
+    top: 40px;
+    width:auto;
+    z-index: 1001;
+    height: auto;    
+}
+
+/* Player Crono wglContainer ................................................*/
+#wglPlayerCronoContainer {		
+	background-color: #252525;
+    left: 300px;
+    position: absolute;
+    top: 0px;
+    width:14%;
+    z-index: 1001;
+    height: auto;    
+    box-sizing: border-box;	
+	border-style:solid;
+	border-width:2px;
+	border-color:#a39d9d;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;	         
+}
+
+/* Player Circuit wglContainer ................................................*/
+#wglPlayerCircuitContainer {	
+	background-color: #252525;	
+    left: 1000px;
+    position: absolute;
+	top: 0px;
+    width:14%;
+    height: auto;
+    z-index: 1001;
+    height: auto;    
+    box-sizing: border-box;	
+	border-style:solid;
+	border-width:2px;
+	border-color:#a39d9d;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;	     
+}
+
+
+/* Player Crono wglContainer ................................................*/
+#wglRaceTableContainer {		
+	background-color: transparent;
+    left: 300px;
+    position: absolute;
+    top: 0px;
+    width:auto; /*14%;*/
+    z-index: 1001;
+    height: auto;    
+    box-sizing: border-box;	
+	border-style:solid;
+	border-width:2px;
+	border-color:#252525;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;	         
+}
+
+/* Game Map wglContainer ................................................*/
+#wglGameMapContainer {	
+	background-color: transparent;	
+    left: 300px;
+    position: absolute;
+    z-index: 1001;
+    top: 290px;
+    width:auto;    
+    height: auto;    
+}
+#map_canvas {
+	background-color: transparent;
+}
+#map_canvas canvas {
+	background-color: transparent;
+}
+
+/* Game Map Container ................................................
+#containerMapCanvas {
+	background-color: transparent;
+}
+
+#containerMapCanvas #map_canvas {
+	background-color: transparent;
+}
+
+#containerMapCanvas #map_canvas canvas {
+	background-color: transparent;
+}
+*/
+
+/* wgl tables ................................................*/
+
+table.wgltwocolumns {
+	width:100%;
+	height: auto;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;	
+	border: 1px solid #1C6EA4;  
+  	text-align: left;
+  	border-collapse: collapse;
+}	
+
+table.wgltwocolumns tbody {
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}	
+
+table.wgltwocolumns tbody tr td{
+  	border: 1px solid #AAAAAA;
+  	padding: 3px 2px;	
+	width:50%;	
+	height:auto;
+	padding: 0.5em;		
+	text-align: center;	
+	cursor: pointer;
+}
+
+table.wglthreecolumns {
+	
+	width:auto;
+	height: auto;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;	
+	border: 1px solid #1C6EA4;  
+  	text-align: left;
+  	border-collapse: collapse;
+}	
+
+table.wglthreecolumns tbody {
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}	
+
+table.wglthreecolumns tbody tr {
+ 	background-color:transparent
+}
+
+table.wglthreecolumns tbody tr.player {
+ 	background-color: dodgerblue; 	
+}
+
+table.wglthreecolumns tbody tr td{
+  	border: 1px solid #252525;
+  	padding: 3px 2px;		
+	height:auto;
+	padding: 0.5em;		
+	text-align: center;	
+	cursor: pointer;
+}
+table.wglthreecolumns tbody tr td.header{
+	width:100%;	
+}
+table.wglthreecolumns tbody tr td.position{
+	width:10%;	
+}
+table.wglthreecolumns tbody tr td.racer{
+	width:45%;	
+}
+table.wglthreecolumns tbody tr td.tiempo{
+	width:45%;	
+}
+/*
+table.wgltwocolumns tbody tr td p {
+	color:#ffffff;
+	white-space: nowrap;
+	display:inline;
+	width:auto;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	font-family: sans-serif, CenturyGothic, AppleGothic, sans-serif; 
+	font-size: 1.0em; 
+	font-style: normal; 	 	
+   	font-weight: normal;   	  
+   	line-height: 1.2em;
+}
+*/
+/* Game Center Panel wglContainer ................................................
+#wglGameCenterPanelContainer {		
+	background-color: transparent;
+    left: 620px;
+    position: absolute;
+    top: 0;
+    width: auto;
+    z-index: 1001;
+    height: auto;    
+    display: flex;
+    margin-top: 180px;
+	border-style:solid;
+	border-width:2px;
+	border-color:#a39d9d;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;	    
+}
+
+#wglGameCenterPanelContent {
+	text-align: center;
+		background-color: transparent;
+    margin: 0;
+    position:relative;
+    padding:10px;
+    width:256px;
+    height: 256px;
+    border-radius:4px;
+    border-color:#a39d9d;
+}
+*/

@@ -1,0 +1,317 @@
+@charset "UTF-8";
+
+
+/* fonts .............................................................................*/
+@font-face {
+    font-family: 'Bankrus';
+    src: url('fonts/bankrus.ttf');
+}
+
+@font-face {
+    font-family: 'SpaceGrotesk-Bold';
+    src: url('fonts/SpaceGrotesk-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'SpaceGrotesk-Medium';
+    src: url('fonts/SpaceGrotesk-Medium.ttf');
+}
+
+
+/*
+font-family: 'BankGothic Md BT', sans-serif;
+font-family: 'BankGothic Light', sans-serif;
+font-family: 'BankGothic', sans-serif;                                         
+*/
+
+/* FORM ELEMENTS .....................................................................................*/
+
+input[type=text] {
+	color: #000000;
+	white-space: nowrap;
+	display:inline;
+	width:100%;
+	margin: 0 0 0 0;
+	padding: 0 0 0 4px;
+	font-family: 'SpaceGrotesk-Medium'; 	
+	font-size: 30px;   	   
+}
+input[type=password] {
+	color: #000000;
+	white-space: nowrap;
+	display:inline;
+	width:100%;
+	margin: 0 0 0 0;
+	padding: 0 0 0 4px;
+	font-family: 'SpaceGrotesk-Medium'; 	
+	font-size: 30px;   	   
+}
+
+
+h2 {
+	white-space: nowrap;
+	float: left;
+	color:#ffffff;
+	font-family: 'BankGothic Md BT'; 		
+	margin: 0 0 0 0;
+	font-size: 30px; 
+	font-style: normal;	
+   	font-weight: normal;
+   	line-height: 36px; 	   	
+   	text-shadow: 3px 3px 3px #000000;
+}
+
+h3 {
+	white-space: nowrap;
+	display:inline;
+	color:#ffffff;
+	font-family: 'BankGothic Md BT'; 		
+	margin: 0 0 0 0;
+	font-size: 30px; 
+	font-style: normal;	
+   	font-weight: normal;
+   	line-height: 36px; 	   	
+   	text-shadow: 3px 3px 3px #000000;
+}
+
+h4 {
+	font-family: 'BankGothic Md BT'; 	
+	color:#ffffff;
+	margin: 0 0 0 0;
+	font-size: 40px; 
+	font-style: normal;	
+   	font-weight: normal;
+   	line-height: 40px;	   	
+   	text-shadow: 3px 3px 3px #000000;
+}
+
+h5 {
+	font-family: 'BankGothic Md BT'; 	
+	color:#ffffff;
+	margin: 0 0 0 0;
+	line-height: 34px;	
+	font-size: 34px; 
+	font-style: normal;	
+   	font-weight: normal;   	   	
+   	text-shadow: 3px 3px 3px #000000;
+}
+
+	
+
+
+p.table {
+	color:#ffffff;
+	white-space: nowrap;
+	display:inline;
+	width:auto;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	font-family: 'BankGothic Md BT'; 	
+	font-size: 25px; 
+	font-style: normal; 	 	
+   	font-weight: normal;   	  
+   	line-height: 25px;  
+   	text-shadow: 1px 1px 1px #000000; 
+}
+
+p.list {
+	float:left;
+	color:#ffffff;
+	white-space: nowrap;
+	display:inline;
+	width:auto;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	font-family: 'BankGothic Md BT'; 
+	line-height: 1.6em; 	
+	font-size: 1.6em; 
+	font-style: normal; 	 	
+   	font-weight: normal;   	      
+   	text-shadow: 1px 1px 1px #000000; 
+}
+
+p.message {
+	display:inline;
+	font-family: 'BankGothic Md BT'; 	
+	color:#fce38d;
+	margin: 0 0 0 0;
+	font-size: 24px; 
+	line-height: 24px;
+	font-style: normal;	
+   	font-weight: normal;
+   	  
+   	text-shadow: 2px 2px 2px #000000;  	   	
+}
+
+
+
+p.menuactive{
+	color:#ff7902;
+	white-space: nowrap;
+	display:inline;	
+	font-family: 'BankGothic Md BT'; 		
+	margin: 0 0 0 0;
+	font-size:2.6em; 
+	font-style: normal;	
+   	font-weight: normal;   	
+   	text-shadow: 3px 3px 3px #000000;	
+}
+
+p.menu {
+	color:#ffffff;
+	white-space: nowrap;
+	display:inline;	
+	font-family: 'BankGothic Md BT'; 		
+	margin: 0 0 0 0;	
+	font-size: 2.6em; 
+	font-style: normal;	
+   	font-weight: normal;   	 	   	
+   	text-shadow: 3px 3px 3px #000000;
+}
+
+a.message {
+	text-decoration: none;
+	white-space: nowrap;
+	display:inline;
+	font-family: 'BankGothic Md BT'; 	
+	color:#fcefc2;
+	margin: 0 0 0 0;
+	font-size: 26px; 
+	font-style: normal;	
+   	font-weight: normal;
+   	line-height: 26px;  
+   	text-shadow: 2px 2px 2px #000000;  	   	
+}
+
+a.menu {
+	text-decoration: none;
+	color: #ffffff;
+	white-space: nowrap;
+	display:inline;
+	width:auto;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	font-family: 'BankGothic Md BT'; 	
+	font-size: 30px; 
+	font-style: normal; 	 	
+   	font-weight: normal;   	  
+   	line-height: 30px;  
+   	text-shadow: 1px 1px 1px #000000; 	
+}	
+
+a.menu_active {
+	text-decoration: none;
+	color: #ff7902;
+	white-space: nowrap;
+	display:inline;
+	width:auto;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	font-family: 'BankGothic Md BT'; 	
+	font-size: 30px; 
+	font-style: normal; 	 	
+   	font-weight: normal;   	  
+   	line-height: 30px;  
+   	text-shadow: 1px 1px 1px #000000; 	
+}		
+
+a.menu_disabled {
+	cursor: none;
+	text-decoration: none;
+	color: darkgrey;
+	white-space: nowrap;
+	display:inline;
+	width:auto;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	font-family: 'BankGothic Md BT'; 	
+	font-size: 30px; 
+	font-style: normal; 	 	
+   	font-weight: normal;   	  
+   	line-height: 30px;  
+   	text-shadow: 1px 1px 1px #000000; 	
+}	
+
+p.value {
+	color: #ffffff;
+	width:auto;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	font-family: 'BankGothic Md BT'; 	
+	font-size: 28px; 
+	font-style: normal; 	 	
+   	font-weight: normal;   	  
+   	line-height: 28px;  
+   	text-shadow: 1px 1px 1px #000000; 
+}
+
+p.message_big {
+	font-family: 'BankGothic Md BT'; 	
+	color:#fcefc2;
+	margin: 0 0 0 0;
+	font-size: 26px; 
+	font-style: normal;	
+   	font-weight: normal;
+   	line-height: 26px;  
+   	text-shadow: 2px 2px 2px #000000;  	   	
+}
+
+label {
+	color: #91c4fd;
+	white-space: nowrap;
+	display:inline;
+	width:auto;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	font-family: 'BankGothic Md BT'; 	
+	font-size: 28px; 
+	font-style: normal; 	 	
+   	font-weight: normal;   	  
+   	line-height: 28px;  
+   	text-shadow: 1px 1px 1px #000000; 
+}
+
+label.option {
+	color: white;
+}
+
+hr {
+	display: block;
+	margin: 0 0 0.6em 0;
+    padding: 0 0 0 0;
+    background-color:transparent;
+    border-top: 1px solid lavender;
+    /*margin-top: 0.25rem;
+    margin-bottom: 0;*/
+}
+
+hr.sep {
+	border: none;
+	background-color: transparent;
+	height: 6px;
+}
+
+hr.big {
+	display: block;
+	margin: 0 0 0.6em 0;
+    padding: 0 0 0 0;
+    height: 3px;
+    background-color: black;
+    border-top: 2px solid #ffffff;
+    border-bottom: 2px solid crimson;
+    /*margin-top: 0.25rem;
+    margin-bottom: 0;*/
+}
+
+
+
+select{
+	color: #000000;
+	white-space: nowrap;
+	display:inline;
+	width:100%;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	font-family: 'BankGothic Md BT'; 	
+	font-size: 28px;   	   
+}
