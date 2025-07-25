@@ -22,6 +22,15 @@ class  WebGLAppDoom {
 		//charge Three WebGlMonitor
 		//.....................................................................		
 		this.renderer = new THREE.WebGLRenderer();
+		this.renderer.antialias  = true;
+		this.renderer.setPixelRatio( window.devicePixelRatio );
+		this.renderer.setSize(this.monitorWidth,this.monitorHeight);	
+		this.renderer.gammaOutput = true;
+		this.renderer.autoClear = false;				
+		this.renderer.alpha= true;
+		this.renderer.shadowMapEnabled = true;
+		this.renderer.outputEncoding = THREE.sRGBEncoding;
+		
 		this.renderer.setSize( monitorWidth, monitorHeight);				
 		this.objCanvas.appendChild( this.renderer.domElement );
 		this.boundingClientRect = this.renderer.domElement.getBoundingClientRect();
