@@ -1,0 +1,16 @@
+{
+	"id":"car7",
+	"position":[0.0,0.0,0.0],
+	"dataDirectory":"data/gamecar/cars/car7/",
+	"textureDirectory":"data/gamecar/cars/car7/",
+	"objects":[
+		{
+			"id":"car7.fbx",
+			"parent_id":null,
+			"position":[0.0,0.0,0.0],
+			"color":[0.5,0.5,0.5,1.0],
+			"opacity":1.0,
+			"textures":"buggy_t_07.jpg"
+		}
+	]
+}

@@ -1,0 +1,55 @@
+{
+	"id":"teams",
+	"teams":[
+		{
+			"name":"Mercedes",
+			"memberA":{"name":"Lewis Hamilton"},
+			"memberB":{"name":"George Russell"}
+		},
+		{
+			"name":"RedBull",
+			"memberA":{"name":"Max Verstappen"},
+			"memberB":{"name":"Sergio Pérez"}
+		},
+		{
+			"name":"McLaren",
+			"memberA":{"name":"Lando Norris"},
+			"memberB":{"name":"Oscar Piastri"}
+		},
+		{
+			"name":"AstonMartin",
+			"memberA":{"name":"Fernando Alonso"},
+			"memberB":{"name":"Lance Stroll"}
+		},
+		{
+			"name":"Alpine",
+			"memberA":{"name":"Esteban Ocon"},
+			"memberB":{"name":"Pierre Gasly"}
+		},
+		{
+			"name":"Ferrari",
+			"memberA":{"name":"Charles Leclerc"},
+			"memberB":{"name":"Carlos Sainz"}
+		},
+		{
+			"name":"AlphaTauri",
+			"memberA":{"name":"Yuki Tsunoda"},
+			"memberB":{"name":"Nyck de Vries"}
+		},
+		{
+			"name":"AlfaRomeo",
+			"memberA":{"name":"Valtteri Bottas"},
+			"memberB":{"name":"Guanyu Zhou"}
+		},
+		{
+			"name":"Haas",
+			"memberA":{"name":"Kevin Magnussen"},
+			"memberB":{"name":"Nico Hulkenberg"}
+		},
+		{
+			"name":"Williams",
+			"memberA":{"name":"Alex Albon"},
+			"memberB":{"name":"Logan Sargeant"}
+		}								
+	]
+}

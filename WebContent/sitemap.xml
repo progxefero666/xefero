@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+<url>
+  <loc>https://xefero.com/index.html</loc>
+  <lastmod>2022-08-12T01:10:10+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+
+<url>
+  <loc>https://xefero.com/app/lamparas/page_lamparas.html</loc>
+  <lastmod>2022-08-12T01:10:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://xefero.com/app/frascos/page_frascos.html</loc>
+  <lastmod>2021-08-18T21:20:10+00:00</lastmod>
+  <priority>0.60</priority>
+</url>
+
+<url>
+  <loc>https://xefero.com/app/articulados/page_articulados.html</loc>
+  <lastmod>2021-08-18T21:20:10+00:00</lastmod>
+  <priority>0.40</priority>
+</url>
+
+<url>
+  <loc>https://xefero.com/app/autor/page_autor.html</loc>
+  <lastmod>2021-08-18T21:20:10+00:00</lastmod>
+  <priority>0.20</priority>
+</url>
+
+
+</urlset>

@@ -1,0 +1,9 @@
+{
+	"id":"madrid",
+	"racers":[
+		{"team":"Mercedes","member":"A"},
+		{"team":"Mercedes","member":"B"},
+		{"team":"RedBull","member":"A"},
+		{"team":"RedBull","member":"B"}								
+	]
+}

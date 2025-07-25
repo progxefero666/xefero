@@ -1,0 +1,15 @@
+{
+	"id":"data/manmesh/",
+	"position":[0.0,0.0,0.0],
+	"dataDirectory":"data/manmesh/",
+	"textureDirectory":"data/manmesh/",
+	"objects":[
+		{
+			"id":"manmesh.fbx",
+			"parent_id":null,
+			"position":[0,0,0],
+			"color":[0.0352941,0.0352941,0.0352941,1.0],
+			"textures":"completa.jpg"
+		}
+	]
+}

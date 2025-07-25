@@ -1,0 +1,24 @@
+{
+	"id":"ramps",
+	"position":[0.0,0.0,0.0],
+	"dataDirectory":"data/gamecar/road/",
+	"textureDirectory":"data/gamecar/road/",
+	"objects":[
+		{
+			"id":"ramp1.fbx",
+			"parent_id":null,
+			"position":[200.0,0.0,4.32331],
+			"color":[0.270588,0.270588,0.270588,1.0],
+			"opacity":1.0,
+			"textures":"ramp.jpg"
+		},
+		{
+			"id":"ramp2.fbx",
+			"parent_id":null,
+			"position":[250.0,0.0,-4.55084],
+			"color":[0.270588,0.270588,0.270588,1.0],
+			"opacity":1.0,
+			"textures":"ramp.jpg"
+		}
+	]
+}

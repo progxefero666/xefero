@@ -1,0 +1,16 @@
+{
+	"id":"elements",
+	"position":[0.0,0.0,0.0],
+	"dataDirectory":"data/gamecar/road/",
+	"textureDirectory":"data/gamecar/road/",
+	"objects":[
+		{
+			"id":"cuadros.fbx",
+			"parent_id":null,
+			"position":[92.5983,0.00999998,8.29697e-05],
+			"color":[0.996078,0.996078,0.996078,1.0],
+			"opacity":1.0,
+			"textures":"cuadrados.jpg"
+		}
+	]
+}

@@ -1,0 +1,17 @@
+{
+	"id":"terrain",
+	"position":[0.0,0.0,0.0],
+	"dataDirectory":"data/game/universoA/",
+	"textureDirectory":"data/game/universoA/",
+	"objects":[
+		{
+			"id":"terrain.fbx",
+			"parent_id":null,
+			"position":[0.0,0.0,0.0],
+			"scale":[1.0,1.0,1.0],
+			"color":[0.588,0.588,0.588,1.0],
+			"opacity":1.0,
+			"textures":"cuartelplanohorizontal.jpg"
+		}
+	]
+}

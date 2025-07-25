@@ -1,0 +1,16 @@
+{
+	"id":"car10",
+	"position":[0.0,0.0,0.0],
+	"dataDirectory":"data/gamecar/cars/car10/",
+	"textureDirectory":"data/gamecar/cars/car10/",
+	"objects":[
+		{
+			"id":"car10.fbx",
+			"parent_id":null,
+			"position":[0.0,0.0,0.0],
+			"color":[0.588,0.588,0.588,1.0],
+			"opacity":1.0,
+			"textures":"buggy_t_10.jpg"
+		}
+	]
+}

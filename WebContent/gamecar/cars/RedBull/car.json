@@ -1,0 +1,13 @@
+{
+	"id":"redbull",
+	"objects":[
+		{
+			"id":"car.fbx",
+			"parent_id":null,
+			"position":[0.0,0.0,0.0],
+			"color":[0.694118,0.686274,0.698039,1.0],
+			"opacity":1.0,
+			"textures":"redbull.png"
+		}
+	]
+}

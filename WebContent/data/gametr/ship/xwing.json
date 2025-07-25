@@ -1,0 +1,27 @@
+{
+	"id":"xwing",
+	"position":[0.0,0.0,0.0],
+	"boundsRadius":17.0,
+	"dataDirectory":"data/game/player/ship/",
+	"textureDirectory":"data/game/player/ship/",
+	"objects":[
+		{
+			"id":"xwingv1.fbx",
+			"parent_id":null,
+			"position":[-7.59959e-07,0.0,0.0],
+			"color":[0.588,0.588,0.588,1.0],
+			"opacity":1.0,
+			"textures":"colorbasev1.png",
+			"roughnessFileName":"xlow_UV1_Roughness.png"
+		},
+		{
+			"id":"xwingv2.fbx",
+			"parent_id":null,
+			"position":[2.37674e-06,0.0,0.0],
+			"color":[0.588,0.588,0.588,1.0],
+			"opacity":1.0,
+			"textures":"colorbasev2.png",
+			"roughnessFileName":"xlow_UV2_Roughness.png"
+		}
+	]
+}

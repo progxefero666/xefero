@@ -1,0 +1,24 @@
+{
+	"id":"wheels",
+	"position":[0.0,0.0,0.0],
+	"dataDirectory":"gamecar/cars/car2/",
+	"textureDirectory":"gamecar/cars/car2/",
+	"objects":[
+		{
+			"id":"wheelfrontleft.fbx",
+			"parent_id":null,
+			"position":[1.297,0.337863,-0.795],
+			"color":[0.560784,0.556863,0.564706,1.0],
+			"opacity":1.0,
+			"textures":"redbull.png"
+		},
+		{
+			"id":"wheelfrontright.fbx",
+			"parent_id":null,
+			"position":[1.297,0.337863,0.795457],
+			"color":[0.560784,0.556863,0.564706,1.0],
+			"opacity":1.0,
+			"textures":"redbull.png"
+		}
+	]
+}

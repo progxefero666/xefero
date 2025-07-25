@@ -1,0 +1,16 @@
+{
+	"id":"elements",
+	"position":[0.0,0.0,0.0],
+	"dataDirectory":"gamecar/circuit/barcelona/road/",
+	"textureDirectory":"gamecar/circuit/barcelona/road/",
+	"objects":[
+		{
+			"id":"cuadros.fbx",
+			"parent_id":null,
+			"position":[-224.42,0.00999999,0.336838],
+			"color":[0.996078,0.996078,0.996078,1.0],
+			"opacity":1.0,
+			"textures":"cuadrados.jpg"
+		}
+	]
+}

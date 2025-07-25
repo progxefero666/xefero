@@ -1,0 +1,139 @@
+@CHARSET "ISO-8859-1";
+
+/*...................................................................................
+p
+...................................................................................*/
+p {
+	padding: 0 0 0 0;
+	margin: 0.5em 0 0.5em 0;	
+	font-family:  sans-serif,Century Gothic, CenturyGothic, AppleGothic;	
+	color:#ffffff;
+	font-style: normal; 
+	font-size: 1.0em; 
+	line-height: 1.4em; 
+}  
+
+p.p_label {
+	margin: 0 0 0.4em 0;
+	padding: 0 0 0 0;	
+	font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif; 
+	font-size: 1.0em; 
+   	line-height: 1.0em; 
+	color:#e0e0e0;
+	text-shadow: 1px 1px 1px #df043d;	
+}
+
+/*...................................................................................
+h1,h2,h3,h4,h5
+...................................................................................*/
+h1,h2,h3,h4,h5 {
+	font-family:  sans-serif,Century Gothic, CenturyGothic, AppleGothic;
+	font-weight:normal;
+	font-style:normal;	 		
+	color:#ffffff;
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+}
+h2 {		
+	color:#8fc3fd;
+	font-family:  Century Gothic, CenturyGothic, AppleGothic;
+	display:inline;
+	width:auto;
+	font-size: 1.0em; 
+	text-shadow: 1px 1px 1px #000000;
+   	line-height: 1.2em;   	   	
+}
+
+h1 {				
+	font-family:  Century Gothic, CenturyGothic, AppleGothic;
+	display:inline;
+	width:auto;
+	font-size: 1.0em; 
+	text-shadow: 1px 1px 1px #02419e;
+   	line-height: 1.6em;   	
+}
+
+h3 {	
+	font-family:  Century Gothic, CenturyGothic, AppleGothic,sans-serif;
+	color:#e0e0e0;
+	display:inline;
+	width:auto;
+	margin: 0 0 0 0;
+	font-size: 1.1em; 
+	font-style: normal; 	 
+	text-shadow: 1px 1px 1px #df043d;
+   	font-weight: normal;
+   	line-height: 1.2em;   
+}
+
+h4 {	
+	display:inline-block;
+	margin: 0 0 0.4em 0;
+	padding: 0 0 0 0;	
+	font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif; 
+	font-size: 1.0em; 
+   	line-height: 1.0em; 
+	color:#e0e0e0;
+	text-shadow: 1px 1px 1px #df043d;	
+}
+
+h5 {	
+	font-size: 0.9rem;
+}
+
+hr {
+	border: 1px solid #343434;
+    margin: 0 0 0.6em 0;
+    padding: 0 0 0 0;
+    background-color: #000000;
+    /*margin-top: 0.25rem;
+    margin-bottom: 0;*/
+}
+
+a.internal {
+	font-family: Century Gothic, AppleGothic, sans-serif; 
+	font-size: 1.0em; 	
+  	color: #83c2fc;
+  	  	
+  	text-decoration: none;
+  	/*text-shadow: 1px 1px 2px #353535;*/
+}
+
+/*
+p.title {
+	color:#e0e0e0;
+	display:inline;
+	width:auto;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;;
+	font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif; 
+	font-size: 1.4em; 
+	font-style: normal; 	 
+	text-shadow: 1px 1px 1px #df043d;
+   	font-weight: normal;
+   	line-height: 2em;   	   	
+}    
+
+p.info {
+	color:#ffffff;
+	display:inline;
+	width:auto;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif; 
+	font-size: 0.94em; 
+	font-style: normal; 	 	
+   	font-weight: normal;   	  
+}  
+*/
+
+
+
+
+
+
+
+
+
+
+

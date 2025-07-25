@@ -1,0 +1,16 @@
+{
+	"id":"redbullvolante",
+	"position":[0.0,0.0,0.0],
+	"dataDirectory":"gamecar/playercars/redbull/",
+	"textureDirectory":"gamecar/playercars/redbull/",
+	"objects":[
+		{
+			"id":"volante.fbx",
+			"parent_id":null,
+			"position":[0.0,0.0,0.0],
+			"color":[0.588235,0.588235,0.588235,1.0],
+			"opacity":1.0,
+			"textures":"volante.jpg"
+		}
+	]
+}

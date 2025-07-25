@@ -1,0 +1,29 @@
+{
+	"dataDirectory":"data/gamecar/cars/car1/",
+	"points":[
+		{
+			"id":"rfpointfrontleft",
+			"position":[2.177,0.0,-0.963]
+		},
+		{
+			"id":"rfpointfront",
+			"position":[2.45958,0.0,0.0]
+		},
+		{
+			"id":"rfpointfrontright",
+			"position":[2.17662,0.0,0.96277]
+		},
+		{
+			"id":"rfpointbackleft",
+			"position":[-2.176,0.0,-0.989]
+		},
+		{
+			"id":"rfpointback",
+			"position":[-2.4594,0.0,0.0]
+		},
+		{
+			"id":"rfpointbackright",
+			"position":[-2.17643,0.0,0.989017]
+		}
+	]
+}

@@ -1,0 +1,16 @@
+{
+	"id":"data/cuartel/",
+	"position":[0.0,0.0,0.0],
+	"dataDirectory":"data/cuartel/",
+	"textureDirectory":"data/cuartel/",
+	"objects":[
+		{
+			"id":"floor.fbx",
+			"parent_id":null,
+			"position":[0.0,0.0,0.0],
+			"color":[0.5,0.5,0.5,1.0],
+			"opacity":1.0,
+			"textures":"cuartelplanohorizontal.jpg"
+		}
+	]
+}

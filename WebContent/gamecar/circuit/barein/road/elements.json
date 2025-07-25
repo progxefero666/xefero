@@ -1,0 +1,13 @@
+{
+	"id":"elements",
+	"objects":[
+		{
+			"id":"cuadros.fbx",
+			"parent_id":null,
+			"position":[-56.6853,0.1,0.648254],
+			"color":[0.996078,0.996078,0.996078,1.0],
+			"opacity":1.0,
+			"textures":"cuadrados.jpg"
+		}
+	]
+}

@@ -1,0 +1,17 @@
+{
+	"id":"bobafett",
+	"position":[0.0,0.0,0.0],
+	"dataDirectory":"data/game/character/bobafett/",
+	"textureDirectory":"data/game/character/bobafett/",
+	"objects":[
+		{
+			"id":"bobafett.fbx",
+			"parent_id":null,
+			"position":[0.0,0.0,0.0],
+			"scale":[0.785813,0.785813,0.785813],
+			"color":[0.941176,0.941176,0.941176,1.0],
+			"opacity":1.0,
+			"textures":"body.PNG"
+		}
+	]
+}

@@ -1,0 +1,26 @@
+{
+	"id":"torretaA",
+	"position":[0.0,0.0,0.0],
+	"dataDirectory":"data/doom/enemy/torretas/torretaA/",
+	"textureDirectory":"data/doom/enemy/torretas/torretaA/",
+	"objects":[
+		{
+			"id":"gun.fbx",
+			"parent_id":null,
+			"position":[-5.00202e-06,0.0,5.00202e-06],
+			"scale":[1.0,1.0,1.0],
+			"color":[0.5,0.5,0.5,1.0],
+			"opacity":1.0,
+			"textures":"Turret_Color.jpg"
+		},
+		{
+			"id":"base.fbx",
+			"parent_id":null,
+			"position":[-5.35215e-07,0.0,5.35215e-07],
+			"scale":[1.2475,1.2475,1.40252],
+			"color":[0.5,0.5,0.5,1.0],
+			"opacity":1.0,
+			"textures":"Turret_Color.jpg"
+		}		
+	]
+}

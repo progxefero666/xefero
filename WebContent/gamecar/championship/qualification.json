@@ -1,0 +1,25 @@
+{
+	"id":"championship",
+	"racers":[
+		{"team":"Mercedes","member":"A"},
+		{"team":"Mercedes","member":"B"},
+		{"team":"RedBull","member":"A"},
+		{"team":"RedBull","member":"B"},
+		{"team":"McLaren","member":"A"},
+		{"team":"McLaren","member":"B"},
+		{"team":"AstonMartin","member":"A"},
+		{"team":"AstonMartin","member":"B"},
+		{"team":"Alpine","member":"A"},
+		{"team":"Alpine","member":"B"},
+		{"team":"Ferrari","member":"A"},
+		{"team":"Ferrari","member":"B"},
+		{"team":"AlphaTauri","member":"A"},
+		{"team":"AlphaTauri","member":"B"},
+		{"team":"AlfaRomeo","member":"A"},
+		{"team":"AlfaRomeo","member":"B"},
+		{"team":"Haas","member":"A"},
+		{"team":"Haas","member":"B"},						
+		{"team":"Williams","member":"A"},
+		{"team":"Williams","member":"B"}								
+	]
+}

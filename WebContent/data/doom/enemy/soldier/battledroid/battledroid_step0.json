@@ -1,0 +1,17 @@
+{
+	"id":"battledroid",
+	"position":[0.0,0.0,0.0],
+	"dataDirectory":"data/doom/enemy/soldier/battledroid/",
+	"textureDirectory":"data/doom/enemy/soldier/battledroid/",
+	"objects":[
+		{
+			"id":"step0.fbx",
+			"parent_id":null,
+			"position":[0.0,0.0,0.0],
+			"scale":[1,1,1],
+			"color":[0.0352941,0.0352941,0.0352941,1.0],
+			"opacity":1.0,
+			"textures":"battledroid.jpg"
+		}
+	]
+}

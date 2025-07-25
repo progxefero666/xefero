@@ -1,0 +1,16 @@
+{
+	"id":"target",
+	"position":[0.0,0.0,0.0],
+	"dataDirectory":"data/cabina/",
+	"textureDirectory":"data/cabina/",
+	"objects":[
+		{
+			"id":"target.fbx",
+			"parent_id":null,
+			"position":[0.0,0.0,0.0],
+			"color":[0.972549,0.0,0.0,1.0],
+			"opacity":1.0,
+			"textures":null
+		}
+	]
+}

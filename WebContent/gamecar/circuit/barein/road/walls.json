@@ -1,0 +1,16 @@
+{
+	"id":"walls",
+	"position":[0.0,0.0,0.0],
+	"dataDirectory":"gamecar/circuit/qatar/road/",
+	"textureDirectory":"gamecar/circuit/qatar/road/",
+	"objects":[
+		{
+			"id":"walls.fbx",
+			"parent_id":null,
+			"position":[0.0,0.0,-3.05176e-05],
+			"color":[0.5,0.5,0.5,1.0],
+			"opacity":1.0,
+			"textures":"quitamiedos.jpg"
+		}
+	]
+}

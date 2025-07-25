@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+	<title>Iluminación Led</title>
+
+	<!-- meta -->	
+    <meta charset="UTF-8">
+    <meta name="description" content="Lámparas e iluminación LED decorativa">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 	<meta name="robots" content="index"/>
+ 	<meta http-equiv="cache-control" content="no-cache"/>
+ 
+	<link rel="canonical" href="https://xefero.com/" />	        		
+	
+	<!-- 	undefined
+	<link rel="shortcut icon" href="/favicon-16x16.png" />	
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="site.webmanifest"> -->
+	
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mobile/1.4.5/jquery.mobile.min.js"></script>
+	<link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/jquery-mobile/1.4.5/jquery.mobile.min.css" type="text/css" />
+	
+		
+	<!-- carrusel slick -->
+	<link rel="stylesheet" type="text/css" href="app/resources/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="app/resources/slick/slick-theme.css"/> 
+    <script type="text/javascript" src="app/resources/slick/slick.js"></script>
+    
+
+    
+	<link rel="stylesheet" type="text/css" href="css/app_fonts.css"/>
+    <link rel="stylesheet" type="text/css" href="css/app_containers.css"/>
+
+    
+ 	<script type="text/javascript" src="./app_lib/webgl/XfTimer.js"></script>
+ 	<script type="text/javascript" src="./app_lib/webgl/xf-constants3d.js"></script>
+ 	<script type="text/javascript" src="./app_lib/webgl/xf-matrix4x4.js"></script>
+ 	<script type="text/javascript" src="./app_lib/webgl/XfVector.js"></script>
+ 	
+ 	<script type="text/javascript" src="./app_lib/webgl/XfLineEQ.js"></script>
+ 	<script type="text/javascript" src="./app_lib/webgl/XfLineDirection.js"></script>
+ 	
+ 	
+ 	<script type="text/javascript" src="./app_lib/webgl/XF_Math.js"></script>
+    <script type="text/javascript" src="./app_lib/webgl/XfMath2dCf.js"></script>
+    <script type="text/javascript" src="./app_lib/webgl/XfMath2dUtil.js"></script>
+    <script type="text/javascript" src="./app_lib/webgl/XfColor.js"></script>
+ 	<script type="text/javascript" src="./app_lib/webgl/xf-scene-driver.js"></script>
+	<script type="text/javascript" src="./app_lib/webgl/xf-scene-paint.js"></script> 	
+ 	
+ 	<script type="text/javascript" src="./app_lib/webgl/XF_Math3dUtil.js"></script>
+ 	<script type="text/javascript" src="./app_lib/webgl/XF_Math3dCf.js"></script>
+ 	
+ 	<script type="text/javascript" src="./app_lib/webgl/xf-raxis.js"></script>
+ 	<script type="text/javascript" src="./app_lib/webgl/xf-geolocator.js"></script>
+ 	<script type="text/javascript" src="./app_lib/webgl/xf-pivot.js"></script> 
+    <script type="text/javascript" src="./app_lib/webgl/XfRuteCf3d.js"></script> 
+
+    <script type="text/javascript" src="./app_lib/webgl/WebGL_threeUtil.js"></script>   
+	<script type="text/javascript" src="./app_lib/webgl/WebGL_rutes.js"></script>    
+	<script type="text/javascript" src="./app_lib/webgl/WegBL_math.js"></script>
+	<script type="text/javascript" src="./app_lib/webgl/WegGL_object3d.js"></script>
+	
+	   
+    <script type="text/javascript" src="./app_lib/webgl/WebGL_util.js"></script>
+    <script type="text/javascript" src="./app_lib/webgl/WebGL_item.js"></script>
+    <script type="text/javascript" src="./app_lib/webgl/WebGL_group.js"></script>
+    <script type="text/javascript" src="./app_lib/webgl/WebGL_object.js"></script>
+    <script type="text/javascript" src="./app_lib/webgl/WebGL_grpobjects.js"></script>
+    <script type="text/javascript" src="./app_lib/webgl/WegGL_data.js"></script> 
+    <script type="text/javascript" src="./app_lib/webgl/WebGL_sceneUtil.js"></script>
+    <script type="text/javascript" src="./app_lib/webgl/WebGL_dinamicObjects.js"></script> 
+
+	
+	<!-- 
+	    <script type="text/javascript" src="./app_lib/webgl/WebGL_bullets.js"></script>
+  	<script type="text/javascript" src="./app_lib/game/EnemyShips.js"></script>
+	
+    <script type="text/javascript" src="./app_lib/universo/Sol3D.js"></script> 
+    <script type="text/javascript" src="./app/WegGLAppUniverse.js"></script>  
+    --> 
+    
+    <script type="text/javascript" src="./app_lib/game/GamePlayerArm.js"></script> 
+    <script type="text/javascript" src="./app_lib/game/GamePlayerShip.js"></script> 
+    <script type="text/javascript" src="./app_lib/game/GamePlayerNoise.js"></script> 
+    
+    
+    <script type="text/javascript" src="./app/WebGLAppTie.js"></script>
+  	<script type="text/javascript" src="./app/page_starwars.js"></script>	
+  	
+  		
+   	<script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+	<script type="importmap">
+  	{
+    	"imports": {
+      		"three": "./three/build/three.module.js",
+      		"three/addons/": "./three/jsm/"
+    	}
+  	}
+	</script>
+  	<script type="module">
+
+  		import * as THREE from 'three';
+	  	import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+		import { FBXLoader } from 'three/addons/loaders/FBXLoader.js';
+		import { MTLLoader } from 'three/addons/loaders/MTLLoader.js';
+		import { FlyControls } from 'three/addons/controls/FlyControls.js';
+
+		//var mtlLoader = new MTLLoader();
+	  	$(document).ready(function(){
+	  			
+			page_init(THREE,FBXLoader,FlyControls,OrbitControls);	
+			initialized = true;     
+	  	});
+	</script>
+	<!-- page code: end  -->
+ 	
+   
+</head>
+
+<body>
+	
+
+	<!-- Page: Index  class="ui-btn" .............................................................................. -->
+	<div data-role="page" id="page_xefero" data-theme="b">	
+	
+		<div data-role="header">
+			<div data-role="navbar" class="ui-state-persist">
+				<ul>					 										
+		      		<li><a href="#page_index" class="ui-btn-active">Inicio</a></li>
+		      		<li><a href="./app/digital/page_digital.html" data-ajax="false" >Digital</a></li>		      		
+				</ul>
+			</div>
+		</div>	
+
+		<div data-role="main" class="ui-content">
+		
+			<!-- LAYOUT COMMON -->			
+			<div class="layout_common" >
+							
+				
+				<!-- container_default .................................................................... -->
+				<div id="panel_menu" class="container_home"  >								
+					<table class="menu_fivecolumns">
+						<tbody>
+							<tr>
+								<td>								
+									<a id="opcion_5" href="#" 									   
+									   class="ui-btn-inline"  >
+										<img class="squaremenu" alt="def" 
+											src="./app/resources/starwars/option_tie.jpg" >
+									</a>									
+								</td>								
+								<td >
+									<a id="opcion_6" href="#" 									   
+									   class="ui-btn-inline"  >
+										<img class="squaremenu" alt="def" 
+											src="./app/resources/editor/option_model_inferior.jpg" >
+									</a>	
+								</td>
+								<td>
+									<a id="opcion_7" href="#" 									   
+									   class="ui-btn-inline"  >
+										<img class="squaremenu" alt="def" 
+											src="./app/resources/editor/option_model_superior.jpg" >
+									</a>	
+								</td>									
+								<td>
+									<a id="opcion_8" href="#" 									
+										data-ajax="false" >									 
+										<img class="squaremenu" alt="def" 
+											src="./app/resources/editor/option_showreport.jpg" >
+									</a>
+								</td>
+								<td>								
+									<a id="opcion_9" href="#" 									
+										data-ajax="false" >									 
+										<img class="squaremenu" alt="def" 
+											src="./app/resources/editor/option_showreport.jpg" >
+									</a>								
+								</td>
+								
+							</tr>								
+						</tbody>	
+					</table>									
+				</div>
+				<!-- container_default .................................................................... -->
+											
+		    	<!-- ....................................................................................... -->
+				<div class="container_editor"  >
+				
+					<div class="container_editor_left" >
+				
+						<table class="onecolumn">
+							<tbody>
+								<tr>
+									<td id="opcion_1">
+
+									</td>
+								</tr>
+								<tr>	
+									<td id="opcion_2">
+
+									</td>
+								</tr>
+								<tr>	
+									<td id="opcion_3">
+
+									</td>
+								</tr>
+								<tr>	
+									<td id="opcion_4">
+
+									</td>									
+								</tr>
+							
+							</tbody>	
+						</table>
+						
+						 <canvas id="trCanvas" width="280px" height="280px" style="visibility:hidden" ></canvas>
+					</div>
+						 
+					
+					<div class="container_editor_right" >
+							
+						<div class="containerMonitor" id="gl_canvas"></div>
+					</div>
+						
+				</div>
+			
+				<!-- ...<div class="stlmonitor" id="stl_cont"></div>.......................................... -->	
+
+																										
+			</div>
+			<!-- end layout common -->
+			
+			<!-- LAYOUT MOBILE -->
+			<div class="layout_mobile" >
+			
+			</div>
+			<!-- end layout mobile -->
+			
+		</div>
+		<!-- end ui-content -->
+		
+	
+	</div>
+	<!-- End Page................................................................................... 
+	
+	<!--
+	<script type="module">
+	</script>
+	-->
+
+</body>
+</html>

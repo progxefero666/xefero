@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+	<title>Iluminación Led</title>
+
+	<!-- meta -->
+	<meta charset="UTF-8">
+	<meta name="description" content="Lámparas e iluminación LED decorativa">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="robots" content="index" />
+	<meta http-equiv="cache-control" content="no-cache" />
+
+	<link rel="canonical" href="https://xefero.com/" />
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-16x16.png">
+	<link rel="manifest" href="site.webmanifest">
+
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.js"></script>
+	<script type="text/javascript"
+		src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mobile/1.4.5/jquery.mobile.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-mobile/1.4.5/jquery.mobile.min.css"
+		type="text/css" />
+
+
+
+	<link rel="stylesheet" type="text/css" href="css/app_fonts.css" />
+	<link rel="stylesheet" type="text/css" href="css/app_containers.css" />
+
+	<!-- .................................................................................. -->
+	<script type="text/javascript" src="./app_lib/webgl/XfColor.js"></script>
+	<script type="text/javascript" src="./app_lib/webgl/XfTimer.js"></script>
+	<script type="text/javascript" src="./app_lib/webgl/xf-scene-driver.js"></script>
+	<script type="text/javascript" src="./app_lib/webgl/xf-scene-paint.js"></script>
+
+	<script type="text/javascript" src="./app_lib/webgl/XfVector.js"></script>
+	<script type="text/javascript" src="./app_lib/webgl/XfMathVector.js"></script>
+	<script type="text/javascript" src="./app_lib/webgl/XfLineEQ.js"></script>
+	<script type="text/javascript" src="./app_lib/webgl/XfLineVector.js"></script>
+	<script type="text/javascript" src="./app_lib/webgl/XfLineDirection.js"></script>
+	<script type="text/javascript" src="./app_lib/webgl/XfEquationLine3d.js"></script>
+	<script type="text/javascript" src="./app_lib/webgl/XfPoly2d.js"></script>
+	<script type="text/javascript" src="./app_lib/webgl/XfMesh3d.js"></script>
+
+	<script type="text/javascript" src="./app_lib/webgl/XfEsceneLiveItemPivot.js"></script>
+	<script type="text/javascript" src="./app_lib/webgl/XfEsceneLiveItem.js"></script>
+	<script type="text/javascript" src="./app_lib/webgl/XfRute2dItem.js"></script>
+	<script type="text/javascript" src="./app_lib/webgl/XfRute2d.js"></script>
+	<script type="text/javascript" src="./app_lib/webgl/XfRute2dUtil.js"></script>
+
+
+
+	<script type="text/javascript" src="./app_lib/webgl/XF_Math.js"></script>
+	<script type="text/javascript" src="./app_lib/webgl/XfMath2dCf.js"></script>
+	<script type="text/javascript" src="./app_lib/webgl/XfMath2dUtil.js"></script>
+	<script type="text/javascript" src="./app_lib/webgl/XF_Math3dCf.js"></script>
+	<script type="text/javascript" src="./app_lib/webgl/XF_Math3dUtil.js"></script>
+	<script type="text/javascript" src="./app_lib/webgl/xf-geolocator.js"></script>
+
+	<!-- .................................................................................. -->
+	<script type="text/javascript" src="./app_lib/webgl/WebGL_rutes.js"></script>
+	<script type="text/javascript" src="./app_lib/webgl/WebGL_threeUtil.js"></script>
+	<script type="text/javascript" src="./app_lib/webgl/WegBL_math.js"></script>
+	<script type="text/javascript" src="./app_lib/webgl/WebGL_util.js"></script>
+
+	<script type="text/javascript" src="./app_lib/webgl/WebGL_item.js"></script>
+	<script type="text/javascript" src="./app_lib/webgl/WebGL_group.js"></script>
+	<script type="text/javascript" src="./app_lib/webgl/WebGL_object.js"></script>
+	<script type="text/javascript" src="./app_lib/webgl/WebGL_grpobjects.js"></script>
+	<script type="text/javascript" src="./app_lib/webgl/WegGL_data.js"></script>
+
+	<script type="text/javascript" src="./app_lib/webgl/WebGL_dinamicObjects.js"></script>
+	<script type="text/javascript" src="./app_lib/webgl/WebGL_bullets.js"></script>
+	<script type="text/javascript" src="./app_lib/webgl/WebGL_explosion.js"></script>
+	<script type="text/javascript" src="./app_lib/gamepad/GamepadUtil.js"></script>
+	<script type="text/javascript" src="./app_lib/webgl/WebGL_sceneUtil.js"></script>
+
+	<script type="text/javascript" src="./app_lib/doom/GameTerrain.js"></script>
+	
+	<script type="text/javascript" src="./app_lib/starwars/GameFlyScene.js"></script>
+	
+	<script type="text/javascript" src="./app_lib/starwars/EnemyShips.js"></script>
+	<script type="text/javascript" src="./app_lib/starwars/PlayerShip.js"></script>
+	<script type="text/javascript" src="./app_lib/starwars/PlayerArm.js"></script>
+
+	<script type="text/javascript" src="./app/wglapp_starwars.js"></script>
+	<script type="text/javascript" src="./app/page_starwars.js"></script>
+
+
+	<script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+	<script type="importmap">
+  	{
+    	"imports": {
+      		"three": "./three/build/three.module.js",
+      		"three/addons/": "./three/jsm/"
+    	}
+  	}
+	</script>
+
+
+	<script type="module">
+
+		import * as THREE from 'three';
+		import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+		import { FBXLoader } from 'three/addons/loaders/FBXLoader.js';
+		import { MTLLoader } from 'three/addons/loaders/MTLLoader.js';
+		import { FlyControls } from 'three/addons/controls/FlyControls.js';
+
+		//var mtlLoader = new MTLLoader();
+		//var fbxLoader = new FBXLoader()
+		$(document).ready(function () {
+
+			page_init(THREE, FBXLoader, FlyControls, OrbitControls);
+			initialized = true;
+		});
+	</script>
+	<!-- page code: end  -->
+
+
+</head>
+
+<body>
+
+
+	<!-- Page: Index  class="ui-btn" .............................................................................. -->
+	<div data-role="page" id="page_xefero" data-theme="b">
+
+		<div data-role="header">
+			<div data-role="navbar" class="ui-state-persist">
+				<ul>
+					<li><a href="#page_index" class="ui-btn-active">Inicio</a></li>
+					<li><a href="./app/digital/page_digital.html" data-ajax="false">Digital</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div data-role="main" class="ui-content">
+
+			<!-- LAYOUT COMMON -->
+			<div class="layout_common">
+
+
+				<!-- container_default .................................................................... -->
+				<div id="panel_menu" class="container_home">
+					<table class="menu_fivecolumns">
+						<tbody>
+							<tr>
+								<td id="opcion_1">
+									<a href="#" class="ui-btn-inline">
+										<img class="squaremenu" alt="def" src="./resources/pictures/option_tie.jpg">
+									</a>
+								</td>
+								<td id="opcion_2">
+									<a href="#" class="ui-btn-inline">
+										<img class="squaremenu" alt="def" src="./resources/pictures/option_tie.jpg">
+									</a>
+								</td>
+								<td id="opcion_3">
+									<a href="#" class="ui-btn-inline">
+										<img class="squaremenu" alt="def" src="./resources/pictures/option_tie.jpg">
+									</a>
+								</td>
+								<td id="opcion_4">
+									<img class="squaremenu" alt="def" src="./resources/pictures/option_tie.jpg">
+								</td>
+								<td>
+									<a id="opcion_5" href="page_presupuesto.html" data-ajax="false">
+										<img class="squaremenu" alt="def" src="./resources/pictures/option_tie.jpg">
+									</a>
+								</td>
+
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<!-- container_default .................................................................... -->
+
+				<!-- ....................................................................................... -->
+				<div class="container_data_main">
+					<div style="float:left;width:256px;" id="mapMonitor">
+						<canvas id="mapCanvas" style="width:100%;background-color:#220000;" height="256px"></canvas>
+						<canvas id="trCanvas" style="width:100%;background-color:#ffffff;" height="256px"></canvas>
+					</div>
+					<div style="float:left;width:780px;height:512px;">
+						<div class="stlmonitor" id="gl_canvas" style="width:100%;background-color:#ffffff;height:auto;">
+						</div>
+					</div>
+				</div>
+				<!-- 
+				<div class="container_data_main" >		
+					<div class="container_data_left" >
+						<canvas id="gpCanvas" style="width:100%;background-color:#ffffff;" height="280px" ></canvas>
+					</div>
+					<div class="container_data_right" >						
+					</div>
+				</div>													
+				 -->
+			</div>
+			<!-- end layout common -->
+
+			<!-- LAYOUT MOBILE -->
+			<div class="layout_mobile">
+
+				<div class="cont_mobile_header">
+					<img class="content_header_img" src="./app/resources/banners/ban_headerlogo_330x97.jpg"
+						alt="default">
+				</div>
+
+			</div>
+			<!-- end layout mobile -->
+
+		</div>
+		<!-- end ui-content -->
+
+
+	</div>
+	<!-- End Page................................................................................... 
+	
+	<!--
+	<script type="module">
+	</script>
+	-->
+
+</body>
+
+</html>

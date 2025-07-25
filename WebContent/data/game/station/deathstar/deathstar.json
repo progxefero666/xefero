@@ -1,0 +1,26 @@
+{
+	"id":"deathstar",
+	"position":[0.0,0.0,0.0],
+	"boundsRadius":953.0,
+	"dataDirectory":"data/game/station/deathstar/",
+	"textureDirectory":"data/game/station/deathstar/",
+	"objects":[
+		{
+			"id":"deathstarcanon.fbx",
+			"parent_id":null,
+			"position":[0,0,0],
+			"color":[0.133333,0.133333,0.133333,1.0],
+			"opacity":1.0,
+			"textures":"metalplata.jpg"		
+		},
+		{
+			"id":"deathstaresphere.fbx",
+			"parent_id":null,
+			"position":[0,0,0],
+			"color":[0.5,0.5,0.5,1.0],
+			"opacity":1.0,
+			"textures":"deathstar.jpg"
+					
+		}
+	]
+}

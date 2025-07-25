@@ -1,0 +1,13 @@
+{
+	"id":"Mercedes",
+	"objects":[
+		{
+			"id":"car.fbx",
+			"parent_id":null,
+			"position":[0.0,0.0,0.0],
+			"color":[0.5,0.5,0.5,1.0],
+			"opacity":1.0,
+			"textures":"mercedes.png"
+		}
+	]
+}

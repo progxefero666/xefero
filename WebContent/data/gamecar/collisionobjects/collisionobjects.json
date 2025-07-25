@@ -1,0 +1,32 @@
+{
+	"id":"collisionobjects",
+	"position":[0.0,0.0,0.0],
+	"dataDirectory":"data/gamecar/collisionobjects/",
+	"textureDirectory":"data/gamecar/collisionobjects/",
+	"objects":[
+		{
+			"id":"signalroadclosed2.fbx",
+			"parent_id":null,
+			"position":[15925.4,0.0,-9513.98],
+			"color":[0.5,0.5,0.5,1.0],
+			"opacity":1.0,
+			"textures":"roadsignal.png"
+		},
+		{
+			"id":"signalroadclosed3.fbx",
+			"parent_id":null,
+			"position":[19081.7,0.0,-9907.51],
+			"color":[0.5,0.5,0.5,1.0],
+			"opacity":1.0,
+			"textures":"roadsignal.png"
+		},
+		{
+			"id":"signalroadclosed1.fbx",
+			"parent_id":null,
+			"position":[6427.17,0.0,-277.361],
+			"color":[0.5,0.5,0.5,1.0],
+			"opacity":1.0,
+			"textures":"roadsignal.png"
+		}
+	]
+}
