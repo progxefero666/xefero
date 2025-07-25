@@ -1,3 +1,4 @@
+// @ts-nocheck
 /**
  *  WebGL Application Acuario
  */
