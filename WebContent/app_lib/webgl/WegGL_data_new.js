@@ -54,6 +54,7 @@
 			if(modelObj.objects[0].bumpFileName!=null){
 				bumpFileName = modelObj.objects[0].bumpFileName;
 			}		
+			// @ts-ignore
 			let normalFileName = null;
 			if(modelObj.objects[0].normalFileName!=null){
 				normalFileName = modelObj.objects[0].normalFileName;
@@ -73,6 +74,7 @@
 			}
 		}		
 		else {
+			// @ts-ignore
 			let texture = WebGL_threeUtil.getColorTexture(THREE,'trCanvas',elem.color)
 			WebGL_util.loadWglPhysicalColorObject(THREE,scene,fbxLoader,this,this.dataPath,fbxFileName,elem.position,scale,elem.color,elem.opacity,texture);
 		}			
@@ -180,6 +182,7 @@
 				}
 			}		
 			else {
+				// @ts-ignore
 				let texture = WebGL_threeUtil.getColorTexture(THREE,'trCanvas',color)
 				WebGL_util.loadWglPhysicalColorObject(THREE,scene,fbxLoader,this,this.dataPath,fbxFileName,position,scale,color,opacity,texture);
 			}			
@@ -285,6 +288,7 @@
 				}				
 			}		
 			else {
+				// @ts-ignore
 				let texture = WebGL_threeUtil.getColorTexture(THREE,'trCanvas',color)
 				WebGL_util.loadWglPhysicalColorObject(THREE,scene,fbxLoader,this,this.dataPath,fbxFileName,position,scale,color,opacity,texture);
 			}			
@@ -397,6 +401,7 @@
 				}
 			}		
 			else {
+				// @ts-ignore
 				let texture = WebGL_threeUtil.getColorTexture(THREE,'trCanvas',color)
 				WebGL_util.loadWglPhysicalColorObject(THREE,scene,fbxLoader,this,this.dataPath,fbxFileName,position,scale,color,opacity,texture);
 			}			
@@ -408,6 +413,7 @@
 	getListIndex(dtoName){
 		let index = 0;
 		for (let i=0;i<this.countItems;i++){
+			// @ts-ignore
 			if(this.listOrdered[i]==dtoName){
 				index = i;
 				break;

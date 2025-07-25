@@ -22,14 +22,22 @@
 }//end function
 
 function getColorRGBA(colorInt) {   
+	// @ts-ignore
 	var porcentaje_r = XF_Math.getPercent(1.0,colorInt[0]);
+	// @ts-ignore
 	var porcentaje_g = XF_Math.getPercent(1.0,colorInt[1]);
+	// @ts-ignore
 	var porcentaje_b = XF_Math.getPercent(1.0,colorInt[2]);
+	// @ts-ignore
 	var porcentaje_a = XF_Math.getPercent(1.0,colorInt[3]);
 		
+	// @ts-ignore
 	var valor_r = Math.floor(XF_Math.getValuePercent(255,porcentaje_r));
+	// @ts-ignore
 	var valor_g = Math.floor(XF_Math.getValuePercent(255,porcentaje_g));
+	// @ts-ignore
 	var valor_b = Math.floor(XF_Math.getValuePercent(255,porcentaje_b));
+	// @ts-ignore
 	var valor_a = Math.floor(XF_Math.getValuePercent(255,porcentaje_a));
 					
 	return [valor_r,valor_g,valor_b,valor_a];	
@@ -57,10 +65,12 @@ function createImageFromColor(imgWidth,imgHeight,colorInt){
 	
 	var ctx = canvas.getContext("2d");		
 	var imgData = createImageDataFromColor(ctx,imgWidth,imgHeight,colorInt);
+ 	// @ts-ignore
  	ctx.putImageData(imgData,0,0);
  	        
     var image=new Image();
     image.onload=function(){
+       // @ts-ignore
        ctx.drawImage(image,0,0);
     }
     image.src=canvas.toDataURL();    	
@@ -86,6 +96,7 @@ function createImageFromColor(imgWidth,imgHeight,colorInt){
         });
     */
     static readTxtFileContent(file_path) {    
+    	// @ts-ignore
     	var data = $.ajax({
 		       	url: file_path,
 		       	async: false
@@ -94,7 +105,9 @@ function createImageFromColor(imgWidth,imgHeight,colorInt){
     }
     
 	static readJSonObject(file_path) {
+		// @ts-ignore
 		var json_object = $.parseJSON(
+		   	// @ts-ignore
 		   	$.ajax({
 		       	url: file_path,
 		       	async: false,
@@ -107,6 +120,7 @@ function createImageFromColor(imgWidth,imgHeight,colorInt){
 	static getColorTexture(THREE,canvasId,color){
 		//var itemColor = [0.0,0.0,0.0,1.0];
 		let canvas = document.getElementById(canvasId);
+		// @ts-ignore
 		let ctx = canvas.getContext("2d");	
 		let imgData = createImageDataFromColor(
 			ctx,
@@ -125,10 +139,15 @@ function createImageFromColor(imgWidth,imgHeight,colorInt){
     		canvas.width  = img.width;
     		canvas.height = img.height;			    		 
 			let ctx = canvas.getContext("2d");     		
+     		// @ts-ignore
      		ctx.translate(img.width/2,img.height/2);
+     		// @ts-ignore
      		let rotationApply = XF_Math.getAngleDec(XF_Math.RADIANS_90,angle);
+  			// @ts-ignore
   			ctx.rotate(rotationApply);			
+			// @ts-ignore
 			ctx.drawImage(img,-img.width/2,-img.height/2) ; 
+			// @ts-ignore
 			let imgData = ctx.getImageData(1,1,img.width,img.height);	
 			let texture = new THREE.DataTexture(imgData,img.width,img.height);
 			texture.needsUpdate = true;	
@@ -154,18 +173,26 @@ function createImageFromColor(imgWidth,imgHeight,colorInt){
 			let ctx = canvas.getContext("2d");
 
      		for(let idx=0;idx<velocityMax;idx++){
+				// @ts-ignore
 				ctx.clearRect(0, 0, canvas.width, canvas.height);
+				// @ts-ignore
 				ctx.save();  
+				// @ts-ignore
 				ctx.translate(img.width/2,img.height/2); 
 				let rotationApply = (idx * angleUnit) * (-1);										
+				// @ts-ignore
 				ctx.rotate(XF_Math.RADIANS_90);
+				// @ts-ignore
 				ctx.rotate(rotationApply);
+				// @ts-ignore
 				ctx.drawImage(img,-img.width/2,-img.height/2) ; 
   				//link.href = canvas.toDataURL(); 
  				//link.click();  				 
+				// @ts-ignore
 				let imgData = ctx.getImageData(1,1,img.width,img.height);				
 				textures[idx] = new THREE.DataTexture(imgData,img.width,img.height);
 				textures[idx].needsUpdate = true;					 
+				// @ts-ignore
 				ctx.restore();
 			}		
 			listener.onTexturesCharged(THREE,textures);	
@@ -178,7 +205,9 @@ function createImageFromColor(imgWidth,imgHeight,colorInt){
 		img.onload = function() {	
 			let canvas = document.createElement('canvas');
 			let ctx = canvas.getContext("2d");
+			// @ts-ignore
 			ctx.drawImage(img,0,0);
+			// @ts-ignore
 			let imgData = ctx.getImageData(1,1,img.width,img.height);		
 			listener.onCaptureImageData(imgData);	
 		}		
@@ -190,6 +219,7 @@ function createImageFromColor(imgWidth,imgHeight,colorInt){
 		
 		var modelObj =  WebGL_util.readJSonObject(path);	
 		
+		// @ts-ignore
 		var wglObject = new WebGL_grpobjects(
 				parent,
 				modelId,
@@ -201,6 +231,7 @@ function createImageFromColor(imgWidth,imgHeight,colorInt){
 	}//end function
 		
 
+	// @ts-ignore
 	static loadWglPhysicalColorObject(THREE,scene,fbxLoader,parent,dataDirectory,fbxFileName,position,scale,color,opacity,textureMap) {				
 		var  objMaterial = new THREE.MeshPhysicalMaterial();							
 		objMaterial.color = new THREE.Color(color[0],color[1],color[2]);
@@ -219,6 +250,7 @@ function createImageFromColor(imgWidth,imgHeight,colorInt){
 		//let pos = fbxFileName.lastIndexOf('.');
 		//let objName = fbxFileName.substring(0,pos);
 						
+		// @ts-ignore
 		var  dtoMaterial = new THREE.MeshPhysicalMaterial(objMaterial);
 						
 		var objfbxPath = dataDirectory.concat(fbxFileName);	
@@ -244,15 +276,18 @@ function createImageFromColor(imgWidth,imgHeight,colorInt){
 				object.position.z = position[2];
 				parent.alertItemCharged(scene,object);	
 		    },
+		    // @ts-ignore
 		    (xhr) => {
 		        //console.log((xhr.loaded / xhr.total) * 100 + '% loaded');
 		    },
+		    // @ts-ignore
 		    (error) => {
 		        //console.log(error);
 		    }
 		)
 	}//end function
 
+	// @ts-ignore
 	static loadWglPhysicalTextureObject(THREE,scene,fbxLoader,loaderTextures,parent,dataDirectory,fbxFileName,position,color,scale,opacity,
 									   mapFileName,aoFileName,emissiveFileName,roughnessFileName,bumpFileName) {	
 		
@@ -318,15 +353,18 @@ function createImageFromColor(imgWidth,imgHeight,colorInt){
 				object.position.z = position[2];
 				parent.alertItemCharged(scene,object);			                   		        		       
 		    },
+		    // @ts-ignore
 		    (xhr) => {
 		        //console.log((xhr.loaded / xhr.total) * 100 + '% loaded');
 		    },
+		    // @ts-ignore
 		    (error) => {
 		        //console.log(error);
 		    }   
 		)										   
 	}//end function
 										   		
+	// @ts-ignore
 	static loadWglComplexTextureObject(THREE,scene,fbxLoader,loaderTextures,parent,dataDirectory,fbxFileName,position,color,scale,opacity,
 									   mapFileName,aoFileName,emissiveFileName,roughnessFileName,bumpFileName,normalFileName) {	
 		
@@ -395,9 +433,11 @@ function createImageFromColor(imgWidth,imgHeight,colorInt){
 				object.position.z = position[2];
 				parent.alertItemCharged(scene,object);			                   		        		       
 		    },
+		    // @ts-ignore
 		    (xhr) => {
 		        //console.log((xhr.loaded / xhr.total) * 100 + '% loaded');
 		    },
+		    // @ts-ignore
 		    (error) => {
 		        //console.log(error);
 		    }   
@@ -445,9 +485,11 @@ function createImageFromColor(imgWidth,imgHeight,colorInt){
 				*/
 				parent.alertItemCharged(scene,object);
 		    },
+		    // @ts-ignore
 		    (xhr) => {
 		        //console.log((xhr.loaded / xhr.total) * 100 + '% loaded');
 		    },
+		    // @ts-ignore
 		    (error) => {
 		        //console.log(error);
 		    }   
@@ -475,7 +517,9 @@ function createImageFromColor(imgWidth,imgHeight,colorInt){
 		let countRows = imageData.length;
 		let countCols = imageData[0].length;
 		
+		// @ts-ignore
 		let lenHalf  = countRows/2;
+		// @ts-ignore
 		let widthHalf = countCols/2;
 				
 		console.log(countRows); 
@@ -489,6 +533,7 @@ function createImageFromColor(imgWidth,imgHeight,colorInt){
 		                child.material = objMaterial; 
 		                //let arrayVertex= child.geometry.getAttribute('position').array;  
 		                let arrayVertex= child.geometry.attributes.position.array;  		        
+		                // @ts-ignore
 		                let countPoints = arrayVertex.length / 3;         
 		                /*
 		                //console.log(arrayVertex); 		                		 
@@ -567,9 +612,11 @@ function createImageFromColor(imgWidth,imgHeight,colorInt){
 		            }
 		         })		         		        		       
 		    },
+		    // @ts-ignore
 		    (xhr) => {
 		        //console.log((xhr.loaded / xhr.total) * 100 + '% loaded');
 		    },
+		    // @ts-ignore
 		    (error) => {
 		        //console.log(error);
 		    }   
